@@ -11,6 +11,10 @@
     li {
       margin-right: 50px;
 
+      .active {
+        border: 1px solid #fe6f45;
+      }
+
       a {
         font-size: 14px;
         color: #fff;
@@ -18,8 +22,7 @@
         font-weight: bold;
         cursor: pointer;
       }
-      &:nth-child(3),
-      :last-of-type {
+      &:nth-child(3) {
         margin-right: 0;
       }
     }

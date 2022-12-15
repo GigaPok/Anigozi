@@ -1,0 +1,129 @@
+#footer {
+  padding-top: 21px;
+  padding-bottom: 21px;
+  .footer-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #105e25;
+    padding-top: 21px;
+    padding-bottom: 21px;
+
+    img {
+      max-width: 175px;
+    }
+    ul {
+      display: flex;
+
+      li {
+        margin-right: 50px;
+
+        &:last-of-type {
+          margin-right: 0;
+        }
+
+        a {
+          color: #d1b89f;
+          font-size: 14px;
+          font-weight: bold;
+          line-height: 19px;
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
+  .support-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #f9f2eb;
+    padding-top: 29px;
+    padding-bottom: 6px;
+
+    span {
+      font-size: 18px;
+      color: #686159;
+      font-weight: bold;
+      line-height: 24px;
+      text-transform: capitalize;
+    }
+
+    img {
+      max-width: 210px;
+    }
+  }
+  .footer-contact {
+    display: flex;
+    justify-content: space-between;
+    ul {
+      li {
+        display: flex;
+        align-items: baseline;
+        margin-top: 20px;
+
+        &:first-of-type {
+          margin-top: 27px;
+        }
+
+        span {
+          color: #686159;
+          font-weight: bold;
+          font-size: 14px;
+          line-height: 19px;
+        }
+
+        .phone-numbers {
+          display: flex;
+          flex-direction: column;
+        }
+
+        img {
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+  .social {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+
+    ul {
+      display: flex;
+      align-items: baseline;
+
+      li {
+        margin-right: 40px;
+        margin-top: 0;
+
+        &:first-of-type {
+          margin-top: 0;
+        }
+
+        &:last-of-type {
+          margin-right: 0px;
+        }
+
+        img {
+          width: 28px;
+          height: 28px;
+          margin-right: 0;
+          opacity: 0.5;
+
+          &:hover {
+            opacity: 1;
+          }
+        }
+      }
+    }
+    span {
+      font-size: 14px;
+      color: #686159;
+      font-weight: bold;
+      line-height: 19px;
+      text-transform: capitalize;
+      text-align: end;
+      margin-top: 27px;
+    }
+  }
+}

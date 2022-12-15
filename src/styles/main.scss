@@ -2,8 +2,16 @@ body,
 html {
   font-family: "Noto Sans Georgian", sans-serif;
 }
-
+span,
+a,
+button {
+  font-family: "Noto Sans Georgian", sans-serif;
+}
 .container {
   padding-right: 300px !important;
   padding-left: 300px !important;
+}
+
+main {
+  flex: 1;
 }

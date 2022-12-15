@@ -1,6 +1,6 @@
 import React from "react";
 import "./Header.scss";
-import { Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import {
   home,
   products,
@@ -14,20 +14,18 @@ import logo from "../../../../assets/svg/logo.svg";
 export const Header = () => {
   const ChangeLang = () => {};
 
-  // const [active, setActive] = useState(2);
-
   return (
     <div id="header" className="container">
       <div>
         <ul>
           <li>
-            <Link to={about}>About us</Link>
+            <NavLink to={about}>About us</NavLink>
           </li>
           <li>
-            <Link to={products}>Products</Link>
+            <NavLink to={products}>Products</NavLink>
           </li>
           <li>
-            <Link to={production}>Production</Link>
+            <NavLink to={production}>Production</NavLink>
           </li>
         </ul>
       </div>
@@ -39,10 +37,10 @@ export const Header = () => {
       <div className="right-nav">
         <ul>
           <li>
-            <Link to={videos}>Videos</Link>
+            <NavLink to={videos}>Videos</NavLink>
           </li>
           <li>
-            <Link to={contact}>Contact</Link>
+            <NavLink to={contact}>Contact</NavLink>
           </li>
         </ul>
         <button>geo</button>
