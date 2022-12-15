@@ -63,17 +63,43 @@ export const Footer = () => {
             <li>
               <img src={phoneIcon} alt="phone icon" />
               <div className="phone-numbers">
-                <span>(+995) 322 88 80 88</span>
-                <span>(+995) 592 700 010</span>
+                <Link
+                  to="#"
+                  onClick={(e) => {
+                    window.location.href = "tel:0322888088";
+                    e.preventDefault();
+                  }}
+                >
+                  (+995) 322 88 80 88
+                </Link>
+                <Link
+                  to="#"
+                  onClick={(e) => {
+                    window.location.href = "tel:+995592700010";
+                    e.preventDefault();
+                  }}
+                >
+                  (+995) 592 700 010
+                </Link>
               </div>
             </li>
             <li>
               <img src={mailIcon} alt="mail icon" />
-              <span>ana@anigozi.com</span>
+              <Link
+                to="#"
+                onClick={(e) => {
+                  window.location.href = "mailto:ana@anigozi.com";
+                  e.preventDefault();
+                }}
+              >
+                ana@anigozi.com
+              </Link>
             </li>
             <li>
               <img src={mapIcon} alt="map icon" />
-              <span>Martkopi village, 0103, Gardabani, Georgia</span>
+              <a href="https://goo.gl/maps/4VgHf8qHsRdN4MTA9" target="_blank">
+                Martkopi village, 0103, Gardabani, Georgia
+              </a>
             </li>
           </ul>
         </div>
