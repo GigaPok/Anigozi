@@ -1,0 +1,28 @@
+#about {
+  img {
+    &:nth-child(1) {
+      width: 100%;
+      margin-top: 16px;
+    }
+  }
+  .about {
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    img {
+      max-width: 620px;
+    }
+    h2 {
+      margin-top: 81px;
+      margin-bottom: 74px;
+    }
+    p {
+      font-size: 16px;
+      line-height: 24px;
+      max-width: 610px;
+      text-align: start;
+    }
+  }
+}

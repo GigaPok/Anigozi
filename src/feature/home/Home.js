@@ -11,6 +11,34 @@ import sertificate2 from "../../assets/sertificate2.png";
 import sertLogo from "../../assets/svg/certifLogo.svg";
 import Seemore from "../../shared/button/Seemore";
 import { HomeP, HomeTitle } from "../../shared";
+import Card from "../../shared/card/Card";
+import support from "../../assets/svg/support.svg";
+import standard from "../../assets/svg/stand.svg";
+import rates from "../../assets/svg/rates.svg";
+import decorTop from "../../assets/svg/decor.svg";
+import decorBottom from "../../assets/svg/decorB.svg";
+
+const Cards = [
+  {
+    title: "Support",
+    img: support,
+    p: `We bring support to the grower before, 
+    during and after the harvest.`,
+  },
+  {
+    title: "Rates",
+    img: rates,
+    p: `We negotiate competitive process,
+    materials and freight rates`,
+  },
+  {
+    title: "Standards",
+    img: standard,
+    p: `We use technology and certifications to
+    accomplish high quality standards.`,
+  },
+];
+
 export const Home = () => {
   return (
     <Mainlayout>
@@ -62,7 +90,27 @@ export const Home = () => {
             <img src={sertificate2} alt="sertificate" />
           </div>
         </div>
-        <div className="section-5"></div>
+        <div className="section-5">
+          <div className="decorTop">
+            {new Array(4).fill().map((el) => (
+              <img src={decorTop}></img>
+            ))}
+          </div>
+          <div className="cards container">
+            {Cards.map((el) => (
+              <div className="card">
+                <h2 className="cardTittle">{el.title}</h2>
+                <img src={el.img} />
+                <HomeP p={el.p} />
+              </div>
+            ))}
+          </div>
+          <div className="decorB">
+            {new Array(4).fill().map((el) => (
+              <img src={decorBottom}></img>
+            ))}
+          </div>
+        </div>
       </div>
     </Mainlayout>
   );
