@@ -1,0 +1,61 @@
+#home {
+  .section-1 {
+    background-color: #f9f2eb;
+    margin-top: 16px;
+    padding-top: 19px;
+    padding-bottom: 169px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .graphic {
+      background-image: url(../../assets/back.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      display: flex;
+      justify-content: center;
+    }
+
+    h2 {
+      color: #105e25;
+      font-size: 80px;
+      line-height: 84px;
+      font-weight: 800;
+      margin-top: 31px;
+      margin-bottom: 34px;
+    }
+  }
+  .section-2,
+  .section-3,
+  .section-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .section-3 {
+    background-color: #f9f2eb;
+  }
+  .section-4 {
+    h2 {
+      color: #686159;
+    }
+    .sertLogo {
+      margin-top: 32px;
+      max-width: 336px;
+    }
+  }
+
+  .img-wrapper {
+    margin-top: 64px;
+    display: flex;
+    width: 100%;
+    margin-bottom: 16px;
+
+    img {
+      width: 50%;
+      &:last-of-type {
+        margin-left: 16px;
+      }
+    }
+  }
+}

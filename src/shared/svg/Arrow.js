@@ -1,0 +1,25 @@
+import React from "react";
+import "./Arrow.scss";
+
+const Arrow = ({ arrowColor }) => {
+  return (
+    <div className="arrow">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="13"
+        height="21.053"
+        viewBox="0 0 13 21.053"
+      >
+        <path
+          id="Icon_material-keyboard-arrow-down"
+          data-name="Icon material-keyboard-arrow-down"
+          d="M2.474,0l8.053,8.035L18.579,0l2.474,2.474L10.526,13,0,2.474Z"
+          transform="translate(0 21.053) rotate(-90)"
+          fill={arrowColor}
+        />
+      </svg>
+    </div>
+  );
+};
+
+export default Arrow;
