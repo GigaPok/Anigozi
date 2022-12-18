@@ -1,0 +1,50 @@
+#production {
+  .cover {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-top: 16px;
+
+    img {
+      width: 100%;
+    }
+    .prod {
+      padding-left: 300px;
+      h2 {
+        margin-top: 81px;
+        margin-bottom: 74px;
+      }
+      p {
+        font-size: 16px;
+        line-height: 24px;
+        max-width: 610px;
+        text-align: start;
+        margin-bottom: 74px;
+      }
+    }
+    .decor {
+      background-color: #f9f2eb;
+      padding: 66px 0 66px 63px;
+
+      img {
+        width: auto;
+      }
+    }
+  }
+  .production {
+    padding-left: 300px;
+    display: flex;
+  }
+
+  .coverBottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+    margin: 16px 0;
+
+    img {
+      width: 100%;
+      max-height: 394px;
+    }
+  }
+}
