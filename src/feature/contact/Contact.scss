@@ -1,0 +1,76 @@
+#contact {
+  .map {
+    margin-top: 16px;
+  }
+  h2 {
+    margin-top: 75px;
+  }
+  .contact-info {
+    ul {
+      margin-bottom: 80px;
+      li {
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 24px;
+        margin-left: 16px;
+        color: #686159;
+        margin-top: 10px;
+
+        &::after {
+          content: "";
+          top: 0;
+          left: 0;
+          display: block;
+          border-bottom: 1px solid #f9f2eb;
+          padding-bottom: 10px;
+
+          &:last-of-type {
+            padding-bottom: 0;
+          }
+        }
+      }
+      .hed-title {
+        color: #fe6f45;
+        margin-left: 0;
+      }
+    }
+  }
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    padding-left: 300px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+
+    .decor {
+      background-color: #f9f2eb;
+      padding: 60px 0 60px 63px;
+
+      .backImage {
+        position: relative;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+        p {
+          position: absolute;
+          font-size: 32px;
+          font-weight: bold;
+          line-height: 55px;
+          top: 50%;
+          left: 32%;
+          max-width: 380px;
+          color: #d1b89f;
+          z-index: 2;
+          transform: translate(-50%, -50%);
+        }
+      }
+
+      img {
+        position: relative;
+        width: auto;
+        height: 100%;
+      }
+    }
+  }
+}

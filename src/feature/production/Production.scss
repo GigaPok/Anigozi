@@ -25,6 +25,16 @@
     .decor {
       background-color: #f9f2eb;
       padding: 66px 0 66px 63px;
+      .backImage {
+        position: relative;
+        background-repeat: no-repeat;
+        p {
+          text-align: start;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+        }
+      }
 
       img {
         width: auto;

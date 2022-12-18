@@ -1,0 +1,26 @@
+.popup {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(#47433f, 0.85);
+
+  iframe {
+    width: 1044px;
+    height: 674px;
+  }
+  .close {
+    font-size: 50px;
+    position: absolute;
+    top: 20px;
+    left: calc(50% - 50px);
+    cursor: pointer;
+  }
+}
+// body {
+//   overflow: hidden;
+// }
