@@ -1,8 +1,14 @@
+@import "../../styles/responsive.scss";
+
 #about {
   img {
     &:nth-child(1) {
       width: 100%;
       margin-top: 16px;
+
+      @include small {
+        margin-top: 12px;
+      }
     }
   }
   .about {
@@ -11,18 +17,38 @@
     justify-content: space-between;
     align-items: flex-end;
 
+    @include small {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin-bottom: 12px;
+    }
+
     img {
       max-width: 620px;
+      margin-left: 16px;
     }
     h2 {
       margin-top: 81px;
       margin-bottom: 74px;
+
+      @include small {
+        margin: 32px 0;
+        font-size: 28px !important;
+      }
     }
     p {
       font-size: 16px;
       line-height: 24px;
       max-width: 610px;
       text-align: start;
+
+      @include small {
+        font-size: 12px;
+        line-height: 17px;
+        margin-bottom: 32px;
+        padding: 0 !important;
+      }
     }
   }
 }

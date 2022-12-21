@@ -4,19 +4,19 @@ import { Mainlayout } from "../../core";
 import graphic from "../../assets/graphic.png";
 import anigozi1 from "../../assets/anigozi1.png";
 import anigozi2 from "../../assets/anigozi2.png";
-import production from "../../assets/production.png";
+import production1 from "../../assets/production.png";
 import production2 from "../../assets/production2.png";
 import sertificate from "../../assets/sertificate.png";
 import sertificate2 from "../../assets/sertificate2.png";
 import sertLogo from "../../assets/svg/certifLogo.svg";
 import Seemore from "../../shared/button/Seemore";
 import { HomeP, HomeTitle } from "../../shared";
-import Card from "../../shared/card/Card";
 import support from "../../assets/svg/support.svg";
 import standard from "../../assets/svg/stand.svg";
 import rates from "../../assets/svg/rates.svg";
 import decorTop from "../../assets/svg/decor.svg";
 import decorBottom from "../../assets/svg/decorB.svg";
+import { products, videos, about, contact, production } from "../../router";
 
 const Cards = [
   {
@@ -57,7 +57,12 @@ export const Home = () => {
             that processors and manufacturers expect."
           />
           <div>
-            <Seemore color="#FE6F45" text="See more" textColor="#FFFFFF" />
+            <Seemore
+              link={about}
+              color="#FE6F45"
+              text="See more"
+              textColor="#FFFFFF"
+            />
           </div>
         </div>
         <div className="section-2">
@@ -66,7 +71,12 @@ export const Home = () => {
             p="Founded in 2015 and expanding quickly, the family-owned company from
             Georgia cultivates walnuts on an area of 500 hectare."
           />
-          <Seemore color="transparent" text="See more" textColor="#FE6F45" />
+          <Seemore
+            link={products}
+            color="transparent"
+            text="See more"
+            textColor="#FE6F45"
+          />
           <div className="img-wrapper">
             <img src={anigozi1} alt="kakali" />
             <img src={anigozi2} alt="kakali garcheuli" />
@@ -75,9 +85,14 @@ export const Home = () => {
         <div className="section-3">
           <HomeTitle title="Production" />
           <HomeP p="With a capacity of nearly 1 500 tons per year, Anigozi grows and processes walnuts in two formats, in-shell and kernels." />
-          <Seemore color="transparent" text="See more" textColor="#FE6F45" />
+          <Seemore
+            link={production}
+            color="transparent"
+            text="See more"
+            textColor="#FE6F45"
+          />
           <div className="img-wrapper">
-            <img src={production} alt="production" />
+            <img src={production1} alt="production" />
             <img src={production2} alt="production " />
           </div>
         </div>
@@ -93,7 +108,7 @@ export const Home = () => {
         <div className="section-5">
           <div className="decorTop">
             {new Array(4).fill().map((el) => (
-              <img src={decorTop}></img>
+              <img src={decorTop} alt="decor"></img>
             ))}
           </div>
           <div className="cards container">
@@ -107,7 +122,7 @@ export const Home = () => {
           </div>
           <div className="decorB">
             {new Array(4).fill().map((el) => (
-              <img src={decorBottom}></img>
+              <img src={decorBottom} alt="decor"></img>
             ))}
           </div>
         </div>

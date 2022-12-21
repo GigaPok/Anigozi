@@ -1,5 +1,9 @@
+@import "./../../../../styles/responsive.scss";
 #footer {
   padding-bottom: 21px;
+  @include small {
+    padding-bottom: 0;
+  }
   .footer-header {
     display: flex;
     justify-content: space-between;
@@ -8,36 +12,74 @@
     padding-top: 21px;
     padding-bottom: 21px;
 
+    .up {
+      display: none;
+      background-color: #fe6f45;
+      padding: 7px 10px 8px 10px;
+      border-radius: 7px;
+      cursor: pointer;
+      border: none;
+
+      @include small {
+        display: flex;
+      }
+
+      img {
+        rotate: -90deg;
+      }
+    }
+
     img {
       max-width: 175px;
+
+      @include small {
+        max-width: 113px;
+      }
     }
-    ul {
+
+    .nav-links {
       display: flex;
 
-      li {
-        margin-right: 50px;
+      @include small {
+        display: none;
+      }
+      ul {
+        display: flex;
 
-        &:last-of-type {
-          margin-right: 0;
-        }
+        li {
+          margin-right: 50px;
 
-        a {
-          color: #d1b89f;
-          font-size: 14px;
-          font-weight: bold;
-          line-height: 19px;
-          text-transform: capitalize;
+          &:last-of-type {
+            margin-right: 0;
+          }
+
+          a {
+            color: #d1b89f;
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 19px;
+            text-transform: capitalize;
+          }
         }
       }
     }
   }
   .support-wrapper {
-    display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 2px solid #f9f2eb;
     padding-top: 29px;
     padding-bottom: 6px;
+    display: flex;
+
+    @include mid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+      @include small {
+        display: inherit;
+      }
+    }
 
     span {
       font-size: 18px;
@@ -50,11 +92,51 @@
     img {
       max-width: 210px;
     }
+    .web {
+      @include small {
+        display: none;
+      }
+    }
+    .mobile {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+
+      @include small {
+        display: flex;
+      }
+
+      span {
+        margin-bottom: 25px;
+      }
+
+      div {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      img {
+        width: 100%;
+      }
+    }
   }
   .footer-contact {
     display: flex;
     justify-content: space-between;
+
+    @include small {
+      flex-direction: column;
+      align-items: center;
+      padding: 0 !important;
+    }
+
     ul {
+      @include small {
+        margin-top: 32px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
       li {
         display: flex;
         align-items: baseline;
@@ -62,6 +144,10 @@
 
         &:first-of-type {
           margin-top: 27px;
+
+          @include small {
+            margin-top: 0;
+          }
         }
 
         a {
@@ -69,6 +155,10 @@
           font-weight: bold;
           font-size: 14px;
           line-height: 19px;
+
+          @include small {
+            font-size: 12px;
+          }
         }
 
         .phone-numbers {
@@ -87,42 +177,60 @@
     flex-direction: column;
     justify-content: flex-end;
 
+    @include small {
+      border-top: 2px solid #f9f2eb;
+      margin-top: 32px;
+      padding: 12px 0;
+      align-items: center;
+      width: 100%;
+    }
+
     ul {
       display: flex;
       align-items: baseline;
 
-      li {
-        margin-right: 40px;
+      @include small {
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+      }
+    }
+
+    li {
+      margin-right: 40px;
+      margin-top: 0;
+
+      &:first-of-type {
         margin-top: 0;
+      }
 
-        &:first-of-type {
-          margin-top: 0;
-        }
+      &:last-of-type {
+        margin-right: 0px;
+      }
 
-        &:last-of-type {
-          margin-right: 0px;
-        }
+      img {
+        width: 28px;
+        height: 28px;
+        margin-right: 0;
+        opacity: 0.5;
 
-        img {
-          width: 28px;
-          height: 28px;
-          margin-right: 0;
-          opacity: 0.5;
-
-          &:hover {
-            opacity: 1;
-          }
+        &:hover {
+          opacity: 1;
         }
       }
     }
-    span {
-      font-size: 14px;
-      color: #686159;
-      font-weight: bold;
-      line-height: 19px;
-      text-transform: capitalize;
-      text-align: end;
-      margin-top: 27px;
+  }
+  span {
+    font-size: 14px;
+    color: #686159;
+    font-weight: bold;
+    line-height: 19px;
+    text-transform: capitalize;
+    text-align: end;
+    margin-top: 27px;
+
+    @include small {
+      font-size: 12px;
     }
   }
 }

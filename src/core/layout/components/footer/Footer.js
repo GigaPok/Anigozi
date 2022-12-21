@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Footer.scss";
 import { Link } from "react-router-dom";
 import {
@@ -10,7 +10,7 @@ import {
   production,
 } from "../../../../router";
 import logo from "../../../../assets/svg/logo.svg";
-import ebrd from "../../../../assets/svg/ebrd.svg";
+import ebrd from "../../../../assets/ebrd.png";
 import eugeorgia from "../../../../assets/svg/eu.svg";
 import og from "../../../../assets/svg/og.svg";
 import USAID from "../../../../assets/svg/USAID.svg";
@@ -21,13 +21,23 @@ import fbIcon from "../../../../assets/svg/fbIcon.svg";
 import instIcon from "../../../../assets/svg/instIcon.svg";
 import linkIcon from "../../../../assets/svg/linkedin.svg";
 import twitIcon from "../../../../assets/svg/twitIcon.svg";
+import arrow from "../../../../assets/svg/arrow.svg";
 
 export const Footer = () => {
+  const scrollUp = () => {
+    window.scroll({ top: 0, left: 0, behavior: "smooth" });
+  };
+
   return (
     <div id="footer">
       <div className="footer-header container">
-        <img src={logo} alt="avigozi logo" />
-        <div>
+        <Link to="/">
+          <img src={logo} alt="avigozi logo" />
+        </Link>
+        <button className="up" onClick={() => scrollUp()}>
+          <img src={arrow} alt="upp icon" />
+        </button>
+        <div className="nav-links">
           <ul>
             <li>
               <Link to={home}>home</Link>
@@ -51,11 +61,21 @@ export const Footer = () => {
         </div>
       </div>
       <div className="support-wrapper container">
-        <span>Supported by</span>
-        <img src={eugeorgia} alt="eugeorgia logo" />
-        <img src={ebrd} alt="ebrd logo" />
-        <img src={og} alt="og logo" />
-        <img src={USAID} alt="USAID logo" />
+        <span className="web">Supported by</span>
+        <img className="web" src={eugeorgia} alt="eugeorgia logo" />
+        <img className="web" src={ebrd} alt="ebrd logo" />
+        <img className="web" src={og} alt="og logo" />
+        <img className="web" src={USAID} alt="USAID logo" />
+
+        <div className="mobile">
+          <span>Supported by</span>
+          <div>
+            <img src={eugeorgia} alt="eugeorgia logo" />
+            <img src={ebrd} alt="ebrd logo" />
+            <img src={og} alt="og logo" />
+            <img src={USAID} alt="USAID logo" />
+          </div>
+        </div>
       </div>
       <div className="container footer-contact">
         <div>

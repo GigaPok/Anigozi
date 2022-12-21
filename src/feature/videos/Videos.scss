@@ -1,6 +1,13 @@
+@import "../../styles/responsive.scss";
+
 #videos {
   margin-top: 16px;
   margin-bottom: 100px;
+
+  @include small {
+    margin-top: 12px;
+    margin-bottom: 32px;
+  }
 
   .cover {
     display: flex;
@@ -9,9 +16,24 @@
     padding: 24px 0;
     background-color: #f9f2eb;
 
+    @include small {
+      background-image: url(../../assets/svg/decor3.svg);
+      background-repeat: no-repeat;
+      width: 100%;
+      min-height: 196px;
+      display: flex;
+      justify-content: center;
+      background-size: contain;
+      background-position: center;
+    }
+
     img {
       max-height: 284px;
       width: auto;
+
+      @include small {
+        display: none;
+      }
     }
     span {
       font-size: 32px;
@@ -20,6 +42,12 @@
       color: #105e25;
       max-width: 546px;
       text-align: center;
+
+      @include small {
+        font-size: 18px;
+        max-width: 306px;
+        line-height: 24px;
+      }
     }
   }
   .videos-wrapper {
@@ -27,10 +55,19 @@
     grid-template-columns: 1fr 1fr;
     gap: 16px;
 
+    @include small {
+      grid-template-columns: 1fr;
+    }
+
     .box {
       display: flex;
       flex-direction: column;
       margin-top: 75px;
+      cursor: pointer;
+
+      @include small {
+        margin-top: 32px;
+      }
 
       span {
         margin-bottom: 16px;
@@ -38,6 +75,10 @@
         font-weight: bold;
         line-height: 24px;
         color: #686159;
+      }
+
+      img {
+        width: 100%;
       }
     }
   }

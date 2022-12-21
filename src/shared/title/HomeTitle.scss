@@ -1,3 +1,5 @@
+@import "../../styles/responsive.scss";
+
 h2 {
   font-size: 48px;
   line-height: 65px;
@@ -5,4 +7,9 @@ h2 {
   color: #105e25;
   margin-top: 176px;
   margin-bottom: 32px;
+
+  @include small {
+    font-size: 28px;
+    margin-top: 70px;
+  }
 }

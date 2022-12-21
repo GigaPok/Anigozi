@@ -1,8 +1,14 @@
+@import "../../styles/responsive.scss";
+
 #products {
   img {
     &:nth-child(1) {
       width: 100%;
       margin-top: 16px;
+
+      @include small {
+        margin-top: 12px;
+      }
     }
   }
   .product {
@@ -11,45 +17,99 @@
     justify-content: space-between;
     align-items: flex-end;
 
+    @include small {
+      margin-bottom: 32px;
+    }
+
+    @include small {
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+    }
+
     img {
       max-width: 620px;
       margin-top: 16px;
+
+      @include small {
+        max-width: 247px;
+      }
     }
     h2 {
       margin-top: 81px;
       margin-bottom: 74px;
+
+      @include small {
+        margin: 32px 0;
+        font-size: 28px !important;
+      }
     }
     p {
       font-size: 16px;
       line-height: 24px;
       max-width: 610px;
       text-align: start;
+
+      @include small {
+        font-size: 12px;
+        padding: 0 !important;
+      }
     }
   }
   .section2 {
     margin-bottom: 100px;
+
+    @include small {
+      margin-bottom: 12px;
+    }
+
     .shell-title {
       font-size: 25px;
       margin-bottom: 16px;
       margin-top: 22px;
       color: #82796e;
       line-height: 34px;
+
+      @include small {
+        font-size: 18px;
+        margin-bottom: 12px;
+      }
     }
     .shell {
       display: grid;
       justify-content: space-between;
       grid-template-columns: 1fr 1fr;
       gap: 16px;
+
+      @include small {
+        gap: 6px;
+      }
       .box {
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 73px 40px;
+
+        @include mid {
+          flex-direction: column;
+          padding: 12px 20px 12px 9px;
+        }
+
+        img {
+          @include mid {
+            width: 100%;
+            max-width: 147px;
+          }
+        }
       }
       h2 {
         color: #fff;
         font-size: 32px;
         margin-top: 0;
+
+        @include mid {
+          font-size: 18px;
+        }
       }
     }
     .quality {
@@ -59,11 +119,23 @@
         line-height: 34px;
         font-size: 25px;
         color: #686159;
+
+        @include small {
+          margin-top: 32px;
+          font-size: 18px;
+          margin-bottom: 12px;
+        }
       }
       .category {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 16px;
+
+        @include small {
+          display: flex;
+          flex-direction: column;
+          gap: 6px;
+        }
         .box {
           display: flex;
           align-items: center;
@@ -72,12 +144,25 @@
           background-color: #f9f2eb;
           padding-top: 26px;
           padding-bottom: 35px;
+
+          @include small {
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 11px 49px 11px 44px;
+          }
           h2 {
             margin-top: 0;
             font-size: 25px;
             font-weight: 500;
             color: #686159;
             margin-bottom: 40px;
+          }
+
+          img {
+            @include small {
+              width: 100%;
+              max-width: 129px;
+            }
           }
         }
       }
