@@ -24,13 +24,25 @@ export const Contact = () => {
             <HomeTitle size="32px" title="Contact" />
             <ul>
               <li>Production: Martkopi village, 0103, Gardabani, Georgia</li>
+              <hr />
               <li>Office: 6, Saakadze descent, 0160, Tbilisi, Georgia</li>
+              <hr />
               <li>(+995) 322 88 80 88</li>
+              <hr />
               <li className="hed-title">International Sales</li>
-              <li>(+995) 592 700 010 WhatsApp</li>
+              <hr />
+              <li>
+                (+995) 592 700 010 <span>WhatsApp</span>
+              </li>
+              <hr />
               <li>Ana@anigozi.com</li>
+              <hr />
               <li className="hed-title">Local Sales</li>
-              <li>(+995) 557 94 10 91 WhatsApp</li>
+              <hr />
+              <li>
+                (+995) 557 94 10 91 <span>WhatsApp</span>
+              </li>
+              <hr />
               <li>Mari@anigozi.com</li>
             </ul>
           </div>

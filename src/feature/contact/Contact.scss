@@ -28,6 +28,9 @@
       @include small {
         width: 100%;
         margin-bottom: 32px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
       }
       li {
         font-size: 18px;
@@ -46,20 +49,22 @@
         @include small {
           font-size: 14px;
           margin-top: 7px;
+          width: 246px;
+          line-height: 17px;
         }
 
-        &::after {
-          content: "";
-          top: 0;
-          left: 0;
-          display: block;
-          border-bottom: 1px solid #f9f2eb;
-          padding-bottom: 10px;
+        // &::after {
+        //   content: "";
+        //   top: 0;
+        //   left: 0;
+        //   display: block;
+        //   border-bottom: 1px solid #f9f2eb;
+        //   padding-bottom: 10px;
 
-          &:last-of-type {
-            padding-bottom: 0;
-          }
-        }
+        //   &:last-of-type {
+        //     padding-bottom: 0;
+        //   }
+        // }
       }
       .hed-title {
         color: #fe6f45;
@@ -89,6 +94,24 @@
     .contact-info {
       @include small {
         padding: 0 12px;
+      }
+    }
+
+    ul {
+      li {
+        span {
+          margin-left: 32px;
+
+          @include small {
+            font-size: 14px;
+            line-height: 19px;
+          }
+        }
+      }
+
+      hr {
+        border-top: 1px solid #f9f2eb;
+        width: 100%;
       }
     }
 
