@@ -40,22 +40,34 @@ export const Footer = () => {
         <div className="nav-links">
           <ul>
             <li>
-              <Link to={home}>home</Link>
+              <Link to={home} onClick={() => scrollUp()}>
+                home
+              </Link>
             </li>
             <li>
-              <Link to={about}>about us</Link>
+              <Link to={about} onClick={() => scrollUp()}>
+                about us
+              </Link>
             </li>
             <li>
-              <Link to={products}>products</Link>
+              <Link to={products} onClick={() => scrollUp()}>
+                products
+              </Link>
             </li>
             <li>
-              <Link to={production}>production</Link>
+              <Link to={production} onClick={() => scrollUp()}>
+                production
+              </Link>
             </li>
             <li>
-              <Link to={videos}>videos</Link>
+              <Link to={videos} onClick={() => scrollUp()}>
+                videos
+              </Link>
             </li>
             <li>
-              <Link to={contact}>contact</Link>
+              <Link to={contact} onClick={() => scrollUp()}>
+                contact
+              </Link>
             </li>
           </ul>
         </div>
