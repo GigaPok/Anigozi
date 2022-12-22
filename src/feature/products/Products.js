@@ -39,7 +39,7 @@ export const Products = () => {
   return (
     <Mainlayout>
       <div id="products">
-        <img src={productCover} />
+        <img src={productCover} alt="productCover" />
         <div className="product container">
           <div>
             <HomeTitle size="32px" title="Products" />
@@ -55,7 +55,7 @@ export const Products = () => {
               Packaging high quality box or PP bags.
             </p>
           </div>
-          <img src={box} />
+          <img src={box} alt="box" />
         </div>
         <div className="section2 container">
           <h2 className="shell-title">In-shell: 30/32; 32/34; 34/36; 36/38</h2>
@@ -67,7 +67,7 @@ export const Products = () => {
                 className="box"
               >
                 <h2>{el.title}</h2>
-                <img src={el.img} />
+                <img src={el.img} alt="shell" />
               </div>
             ))}
           </div>

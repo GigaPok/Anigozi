@@ -16,6 +16,7 @@ export const Contact = () => {
             allowFullScreen=""
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
+            title="map"
           ></iframe>
         </div>
         <div className="wrapper">

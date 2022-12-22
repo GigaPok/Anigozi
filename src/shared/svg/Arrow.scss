@@ -1,4 +1,10 @@
+@import "../../styles/responsive.scss";
+
 .arrow {
   padding-left: 71px;
   display: flex;
+
+  @include small {
+    padding-left: 12px;
+  }
 }

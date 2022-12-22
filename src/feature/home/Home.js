@@ -16,7 +16,7 @@ import standard from "../../assets/svg/stand.svg";
 import rates from "../../assets/svg/rates.svg";
 import decorTop from "../../assets/svg/decor.svg";
 import decorBottom from "../../assets/svg/decorB.svg";
-import { products, videos, about, contact, production } from "../../router";
+import { products, about, production } from "../../router";
 
 const Cards = [
   {
@@ -56,7 +56,7 @@ export const Home = () => {
             deliver all of the functional benefits, from flavor to nutrition,
             that processors and manufacturers expect."
           />
-          <div>
+          <div className="top-btn btn">
             <Seemore
               link={about}
               color="#FE6F45"
@@ -71,12 +71,15 @@ export const Home = () => {
             p="Founded in 2015 and expanding quickly, the family-owned company from
             Georgia cultivates walnuts on an area of 500 hectare."
           />
-          <Seemore
-            link={products}
-            color="transparent"
-            text="See more"
-            textColor="#FE6F45"
-          />
+          <div className="btn">
+            <Seemore
+              link={products}
+              color="transparent"
+              text="See more"
+              textColor="#FE6F45"
+            />
+          </div>
+
           <div className="img-wrapper">
             <img src={anigozi1} alt="kakali" />
             <img src={anigozi2} alt="kakali garcheuli" />
@@ -85,12 +88,14 @@ export const Home = () => {
         <div className="section-3">
           <HomeTitle title="Production" />
           <HomeP p="With a capacity of nearly 1 500 tons per year, Anigozi grows and processes walnuts in two formats, in-shell and kernels." />
-          <Seemore
-            link={production}
-            color="transparent"
-            text="See more"
-            textColor="#FE6F45"
-          />
+          <div className="btn">
+            <Seemore
+              link={production}
+              color="transparent"
+              text="See more"
+              textColor="#FE6F45"
+            />
+          </div>
           <div className="img-wrapper">
             <img src={production1} alt="production" />
             <img src={production2} alt="production " />
@@ -107,22 +112,22 @@ export const Home = () => {
         </div>
         <div className="section-5">
           <div className="decorTop">
-            {new Array(4).fill().map((el) => (
-              <img src={decorTop} alt="decor"></img>
+            {new Array(4).fill().map((el, key) => (
+              <img src={decorTop} alt="decor" key={key} />
             ))}
           </div>
           <div className="cards container">
-            {Cards.map((el) => (
-              <div className="card">
+            {Cards.map((el, key) => (
+              <div className="card" key={key}>
                 <h2 className="cardTittle">{el.title}</h2>
-                <img src={el.img} />
+                <img src={el.img} alt="decor" />
                 <HomeP p={el.p} />
               </div>
             ))}
           </div>
           <div className="decorB">
-            {new Array(4).fill().map((el) => (
-              <img src={decorBottom} alt="decor"></img>
+            {new Array(4).fill().map((el, key) => (
+              <img src={decorBottom} alt="decor" key={key} />
             ))}
           </div>
         </div>

@@ -9,7 +9,7 @@ export const About = () => {
   return (
     <Mainlayout>
       <div id="about">
-        <img src={contactCover} />
+        <img src={contactCover} alt="contactCover" />
         <div className="about container">
           <div>
             <HomeTitle size="32px" title="About us" />
@@ -34,7 +34,7 @@ export const About = () => {
               that processors and manufacturers expect.
             </p>
           </div>
-          <img src={aginoziabout} />
+          <img src={aginoziabout} alt="aginozAbout" />
         </div>
       </div>
     </Mainlayout>

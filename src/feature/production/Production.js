@@ -46,7 +46,7 @@ export const Production = () => {
             </p>
           </div>
           <div className="decor">
-            <img src={decor} />
+            <img src={decor} alt="decor" />
           </div>
         </div>
         <div className="production"></div>

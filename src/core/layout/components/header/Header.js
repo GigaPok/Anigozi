@@ -15,8 +15,6 @@ import menuActive from "../../../../assets/svg/activeMenu.svg";
 import Burger from "../../../../shared/popup/burger/Burger";
 
 export const Header = () => {
-  const ChangeLang = () => {};
-
   const [menu, setMenu] = useState(true);
 
   !menu
@@ -27,12 +25,18 @@ export const Header = () => {
     <>
       <div id="header" className="container">
         {menu ? (
-          <img className="menu" src={menuIcon} onClick={() => setMenu(!menu)} />
+          <img
+            className="menu"
+            src={menuIcon}
+            onClick={() => setMenu(!menu)}
+            alt="icon-menu"
+          />
         ) : (
           <img
             className="menu"
             src={menuActive}
             onClick={() => setMenu(!menu)}
+            alt="icon-menu"
           />
         )}
 

@@ -16,13 +16,21 @@
 
     .graphic {
       background-image: url(../../assets/back.png);
-      background-size: cover;
       background-repeat: no-repeat;
       display: flex;
       justify-content: center;
+      background-size: contain;
+      min-height: 438px;
+      background-position: bottom center;
+
+      @include small {
+        min-height: 195px;
+      }
 
       img {
         width: 100%;
+        object-fit: contain;
+        object-position: bottom;
       }
     }
 
@@ -40,6 +48,33 @@
         line-height: 60px;
       }
     }
+
+    .top-btn {
+      .see-more {
+        @include small {
+          margin-top: 32px;
+          padding: 20px;
+        }
+      }
+
+      .arrow {
+        @include small {
+          padding-left: 57px !important;
+        }
+      }
+    }
+  }
+  .btn {
+    :hover {
+      background-color: #eb4e08 !important;
+      color: #fff !important;
+
+      .arrow {
+        svg {
+          fill: #eb4e08 !important;
+        }
+      }
+    }
   }
   .section-2,
   .section-3,
@@ -48,6 +83,7 @@
     flex-direction: column;
     align-items: center;
   }
+
   .section-3 {
     background-color: #f9f2eb;
   }

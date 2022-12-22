@@ -9,9 +9,9 @@ export const Video = ({ url, onClose }) => {
         height="100vh"
         src={url}
         title="YouTube video player"
-        frameborder="0"
+        frameBorder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
+        allowFullScreen
       ></iframe>
       <span className="close" onClick={onClose}>
         X

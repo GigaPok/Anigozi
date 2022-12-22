@@ -41,11 +41,11 @@ export const Videos = () => {
       <Mainlayout>
         <div id="videos">
           <div className="cover container">
-            <img src={decor} />
+            <img src={decor} alt="decor" />
             <span>
               Please, check the information and news of our business below.
             </span>
-            <img src={decor} />
+            <img src={decor} alt="decor" />
           </div>
           <div className="videos-wrapper container">
             {videos.map((el, key) => (
@@ -55,7 +55,7 @@ export const Videos = () => {
                 onClick={() => setVideoLink(el.url)}
               >
                 <span>{el.title}</span>
-                <img src={el.photo} />
+                <img src={el.photo} alt="decor" />
               </div>
             ))}
           </div>

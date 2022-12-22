@@ -72,13 +72,9 @@
     padding-bottom: 6px;
     display: flex;
 
-    @include mid {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-
-      @include small {
-        display: inherit;
-      }
+    @include small {
+      display: inherit;
+      padding-top: 32px;
     }
 
     span {
@@ -87,6 +83,7 @@
       font-weight: bold;
       line-height: 24px;
       text-transform: capitalize;
+      margin-top: 0;
     }
 
     img {
@@ -113,6 +110,9 @@
       div {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        @include small {
+          gap: 25px;
+        }
       }
 
       img {
@@ -169,6 +169,9 @@
         img {
           margin-right: 20px;
         }
+        .linkdedin {
+          margin-right: 0;
+        }
       }
     }
   }
@@ -188,11 +191,14 @@
     ul {
       display: flex;
       align-items: baseline;
+      margin-bottom: 27px;
 
       @include small {
         width: 100%;
         flex-direction: row;
         justify-content: center;
+        margin-top: 0;
+        margin-bottom: 12px;
       }
     }
 
@@ -227,7 +233,6 @@
     line-height: 19px;
     text-transform: capitalize;
     text-align: end;
-    margin-top: 27px;
 
     @include small {
       font-size: 12px;

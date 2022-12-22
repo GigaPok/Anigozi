@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./Footer.scss";
 import { Link } from "react-router-dom";
 import {
@@ -117,7 +117,11 @@ export const Footer = () => {
             </li>
             <li>
               <img src={mapIcon} alt="map icon" />
-              <a href="https://goo.gl/maps/4VgHf8qHsRdN4MTA9" target="_blank">
+              <a
+                href="https://goo.gl/maps/4VgHf8qHsRdN4MTA9"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Martkopi village, 0103, Gardabani, Georgia
               </a>
             </li>
@@ -142,7 +146,7 @@ export const Footer = () => {
             </li>
             <li>
               <Link to="#">
-                <img src={linkIcon} alt="linkedin icon" />
+                <img className="linkdedin" src={linkIcon} alt="linkedin icon" />
               </Link>
             </li>
           </ul>

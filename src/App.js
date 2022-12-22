@@ -7,12 +7,12 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path={home} element={<Home />} />
-        <Route path={contact} element={<Contact />} />
-        <Route path={products} element={<Products />} />
-        <Route path={videos} element={<Videos />} />
-        <Route path={about} element={<About />} />
-        <Route path={production} element={<Production />} />
+        <Route path={home} element={<Home />} exact />
+        <Route path={contact} element={<Contact />} exact />
+        <Route path={products} element={<Products exact />} />
+        <Route path={videos} element={<Videos />} exact />
+        <Route path={about} element={<About />} exact />
+        <Route path={production} element={<Production exact />} />
       </Routes>
     </div>
   );
