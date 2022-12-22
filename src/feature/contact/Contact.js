@@ -12,7 +12,7 @@ export const Contact = () => {
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2975.514574264334!2d45.0231197!3d41.7741227!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x404415a71b15b8c9%3A0xe59a7b07fd320587!2sMartkopi!5e0!3m2!1sen!2sge!4v1671375947691!5m2!1sen!2sge"
             width="100%"
-            height="332"
+            height="228"
             allowFullScreen=""
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"

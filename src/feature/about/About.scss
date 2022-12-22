@@ -8,6 +8,8 @@
 
       @include small {
         margin-top: 12px;
+        min-height: 228px;
+        object-fit: cover;
       }
     }
   }
@@ -22,11 +24,16 @@
       align-items: center;
       text-align: center;
       margin-bottom: 12px;
+      padding: 0 !important;
     }
 
     img {
       max-width: 620px;
       margin-left: 16px;
+      @include small {
+        margin-left: 0;
+        width: 100%;
+      }
     }
     h2 {
       margin-top: 81px;
@@ -47,7 +54,7 @@
         font-size: 12px;
         line-height: 17px;
         margin-bottom: 32px;
-        padding: 0 !important;
+        padding: 0 12px !important;
       }
     }
   }

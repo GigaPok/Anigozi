@@ -8,6 +8,8 @@
 
       @include small {
         margin-top: 12px;
+        min-height: 228px;
+        object-fit: cover;
       }
     }
   }
