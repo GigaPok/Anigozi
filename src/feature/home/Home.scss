@@ -114,6 +114,7 @@
         grid-template-columns: repeat(2, 1fr);
         gap: 6px;
         margin: 0 12px;
+        margin-top: 48px;
       }
 
       img {
@@ -136,7 +137,20 @@
       @include small {
         flex-direction: column;
       }
+
       .card {
+        &:nth-child(1) {
+          @include small {
+            margin-top: 12px;
+          }
+        }
+        &:nth-child(2),
+        &:nth-child(3) {
+          @include small {
+            margin-top: 48px;
+          }
+        }
+
         .cardTittle {
           font-size: 32px;
           color: #686159;
@@ -146,16 +160,26 @@
 
           @include small {
             font-size: 18px;
-            margin-top: 12px;
+            margin-bottom: 0;
+            margin-top: 0;
           }
         }
         p {
           max-width: 264px;
           margin-bottom: 32px;
+
+          @include small {
+            margin-bottom: 0;
+            max-width: 228px;
+          }
         }
         img {
           margin-top: 24px;
           margin-bottom: 21px;
+
+          @include small {
+            margin: 16px 0;
+          }
         }
       }
     }

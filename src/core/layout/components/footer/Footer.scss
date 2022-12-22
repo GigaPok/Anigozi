@@ -142,6 +142,9 @@
         align-items: baseline;
         margin-top: 20px;
 
+        @include small {
+          align-items: center;
+        }
         &:first-of-type {
           margin-top: 27px;
 

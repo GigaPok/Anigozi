@@ -34,8 +34,8 @@ const Cards = [
   {
     title: "Standards",
     img: standard,
-    p: `We use technology and certifications to
-    accomplish high quality standards.`,
+    p: `We negotiate competitive process,
+    materials and freight rates.`,
   },
 ];
 
