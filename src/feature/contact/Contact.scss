@@ -75,6 +75,10 @@
     margin-top: 16px;
     margin-bottom: 16px;
 
+    @include mid {
+      padding-left: 30px;
+    }
+
     @include small {
       display: flex;
       flex-direction: column;

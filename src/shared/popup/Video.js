@@ -5,8 +5,8 @@ export const Video = ({ url, onClose }) => {
   return (
     <div className="popup">
       <iframe
-        width="100%"
-        height="100vh"
+        width="70%"
+        height="50%"
         src={url}
         title="YouTube video player"
         frameBorder="0"

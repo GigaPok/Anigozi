@@ -1,3 +1,5 @@
+@import "../../styles/responsive.scss";
+
 .popup {
   position: fixed;
   top: 0;
@@ -10,15 +12,22 @@
   background-color: rgba(#47433f, 0.85);
 
   iframe {
-    width: 1044px;
-    height: 674px;
+    width: 50%;
+    height: 60%;
+
+    @include small {
+      width: 100%;
+      height: 30%;
+      padding: 0 12px;
+    }
   }
   .close {
-    font-size: 50px;
+    font-size: 31px;
     position: absolute;
-    top: 20px;
+    top: 70px;
     cursor: pointer;
     color: #fff;
+    font-weight: 200;
   }
 }
 body {
