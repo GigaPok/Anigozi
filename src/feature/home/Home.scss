@@ -114,7 +114,6 @@
         grid-template-columns: repeat(2, 1fr);
         gap: 6px;
         margin: 0 12px;
-        margin-top: 48px;
       }
 
       img {
@@ -126,6 +125,11 @@
             display: none;
           }
         }
+      }
+    }
+    .decorB {
+      @include small {
+        margin-top: 48px;
       }
     }
     .cards {
