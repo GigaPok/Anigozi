@@ -24,6 +24,13 @@ export const About = () => {
               <br />
               <br />
               {t("AboutUs.Paragraph-3")}
+              <br />
+              <br />
+              1. {t("AboutUs.Paragraph-4")}
+              <br />
+              2. {t("AboutUs.Paragraph-5")}
+              <br />
+              3. {t("AboutUs.Paragraph-6")}
             </p>
           </div>
           <img src={aginoziabout} alt="aginozAbout" />
