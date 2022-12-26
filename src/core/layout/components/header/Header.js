@@ -13,8 +13,17 @@ import logo from "../../../../assets/svg/logo.svg";
 import menuIcon from "../../../../assets/svg/menu.svg";
 import menuActive from "../../../../assets/svg/activeMenu.svg";
 import Burger from "../../../../shared/popup/burger/Burger";
+import { useTranslation } from "react-i18next";
 
 export const Header = () => {
+  function languange(lang) {
+    i18n.changeLanguage(lang);
+
+    setGe(!ge);
+  }
+  const { t, i18n } = useTranslation();
+
+  const [ge, setGe] = useState(true);
   const [menu, setMenu] = useState(true);
 
   !menu
@@ -43,13 +52,13 @@ export const Header = () => {
         <div className="left-nav ">
           <ul>
             <li>
-              <NavLink to={about}>About us</NavLink>
+              <NavLink to={about}>{t("nav.About")}</NavLink>
             </li>
             <li>
-              <NavLink to={products}>Products</NavLink>
+              <NavLink to={products}>{t("nav.Product")}</NavLink>
             </li>
             <li>
-              <NavLink to={production}>Production</NavLink>
+              <NavLink to={production}>{t("nav.Production")}</NavLink>
             </li>
           </ul>
         </div>
@@ -61,15 +70,21 @@ export const Header = () => {
         <div className="right-nav">
           <ul>
             <li>
-              <NavLink to={videos}>Videos</NavLink>
+              <NavLink to={videos}>{t("nav.Videos")}</NavLink>
             </li>
             <li>
-              <NavLink to={contact}>Contact</NavLink>
+              <NavLink to={contact}>{t("nav.Contact")}</NavLink>
             </li>
           </ul>
-          <Link className="lang" to="#">
-            geo
-          </Link>
+          {ge ? (
+            <Link className="lang" onClick={() => languange("ge")}>
+              geo
+            </Link>
+          ) : (
+            <Link className="lang" onClick={() => languange("en")}>
+              en
+            </Link>
+          )}
         </div>
         <Link className="lang-mobile" to="#">
           geo

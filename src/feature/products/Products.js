@@ -11,6 +11,7 @@ import Fernor from "../../assets/svg/fernor.svg";
 import extralight from "../../assets/svg/extralight.svg";
 import light from "../../assets/svg/light.svg";
 import lightamber from "../../assets/svg/lightamber.svg";
+import { useTranslation } from "react-i18next";
 
 const shells = [
   {
@@ -36,29 +37,26 @@ const shells = [
 ];
 
 export const Products = () => {
+  const { t, i18n } = useTranslation();
+
   return (
     <Mainlayout>
       <div id="products">
         <img src={productCover} alt="productCover" />
         <div className="product container">
           <div>
-            <HomeTitle size="32px" title="Products" />
+            <HomeTitle size="32px" title={t("Products.Tittle")} />
             <p>
-              We can supply all range of products from In-shell to kernels.
-              Company produces, processes and packs in shell walnuts of 4
-              varieties: Chandler, Lara, Howard and Fernor. Available sizes from
-              30/32 to 36/38 and 10-25 kg bulk bags. Kernels are available in 3
-              colors: Extra Light, Light and Light Amber and 3 grades: 80%
-              Halves, 60% halves and 40% halves.
+              {t("Products.Paragraph-1")}
               <br />
               <br />
-              Packaging high quality box or PP bags.
+              {t("Products.Paragraph-2")}
             </p>
           </div>
           <img src={box} alt="box" />
         </div>
         <div className="section2 container">
-          <h2 className="shell-title">In-shell: 30/32; 32/34; 34/36; 36/38</h2>
+          <h2 className="shell-title">{t("Products.SubTittle")}</h2>
           <div className="shell">
             {shells.map((el, key) => (
               <div
@@ -72,18 +70,18 @@ export const Products = () => {
             ))}
           </div>
           <div className="quality">
-            <h2>Walnut Kernles (Machine-Cracked/Hand-Cracked)</h2>
+            <h2>{t("Products.Category.Tittle")}</h2>
             <div className="category">
               <div className="box">
-                <h2>Extra Light</h2>
+                <h2>{t("Products.Category.Types.Extra")}</h2>
                 <img src={extralight} alt="extralight" />
               </div>
               <div className="box">
-                <h2>Light</h2>
+                <h2>{t("Products.Category.Types.Light")}</h2>
                 <img src={light} alt="light" />
               </div>
               <div className="box">
-                <h2>Light Amber</h2>
+                <h2>{t("Products.Category.Types.LightAmber")}</h2>
                 <img src={lightamber} alt="lightamber" />
               </div>
             </div>

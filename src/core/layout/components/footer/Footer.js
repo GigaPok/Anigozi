@@ -22,8 +22,11 @@ import instIcon from "../../../../assets/svg/instIcon.svg";
 import linkIcon from "../../../../assets/svg/linkedin.svg";
 import twitIcon from "../../../../assets/svg/twitIcon.svg";
 import arrow from "../../../../assets/svg/arrow.svg";
+import { useTranslation } from "react-i18next";
 
 export const Footer = () => {
+  const { t, i18n } = useTranslation();
+
   const scrollUp = () => {
     window.scroll({ top: 0, left: 0, behavior: "smooth" });
   };
@@ -41,46 +44,46 @@ export const Footer = () => {
           <ul>
             <li>
               <Link to={home} onClick={() => scrollUp()}>
-                home
+                {t("Footer.Nav.Home")}
               </Link>
             </li>
             <li>
               <Link to={about} onClick={() => scrollUp()}>
-                about us
+                {t("Footer.Nav.About")}
               </Link>
             </li>
             <li>
               <Link to={products} onClick={() => scrollUp()}>
-                products
+                {t("Footer.Nav.Products")}
               </Link>
             </li>
             <li>
               <Link to={production} onClick={() => scrollUp()}>
-                production
+                {t("Footer.Nav.Production")}
               </Link>
             </li>
             <li>
               <Link to={videos} onClick={() => scrollUp()}>
-                videos
+                {t("Footer.Nav.Videos")}
               </Link>
             </li>
             <li>
               <Link to={contact} onClick={() => scrollUp()}>
-                contact
+                {t("Footer.Nav.Contact")}
               </Link>
             </li>
           </ul>
         </div>
       </div>
       <div className="support-wrapper container">
-        <span className="web">Supported by</span>
+        <span className="web"> {t("Footer.Tittle")}</span>
         <img className="web" src={eugeorgia} alt="eugeorgia logo" />
         <img className="web" src={ebrd} alt="ebrd logo" />
         <img className="web" src={og} alt="og logo" />
         <img className="web" src={USAID} alt="USAID logo" />
 
         <div className="mobile">
-          <span>Supported by</span>
+          <span> {t("Footer.Tittle")}</span>
           <div>
             <img src={eugeorgia} alt="eugeorgia logo" />
             <img src={ebrd} alt="ebrd logo" />
@@ -162,7 +165,7 @@ export const Footer = () => {
               </Link>
             </li>
           </ul>
-          <span>all rights reserved © 2022</span>
+          <span>{t("Footer.Rights")}</span>
         </div>
       </div>
     </div>
