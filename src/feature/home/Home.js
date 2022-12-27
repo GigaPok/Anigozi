@@ -92,8 +92,8 @@ export const Home = () => {
             />
           </div>
           <div className="img-wrapper">
-            <img src={production1} alt="production" data-aos="flip-left" />
-            <img src={production2} alt="production " data-aos="flip-right" />
+            <img src={production1} alt="production" data-aos="fade-right" />
+            <img src={production2} alt="production " data-aos="fade-left" />
           </div>
         </div>
         <div className="section-4">
@@ -101,18 +101,8 @@ export const Home = () => {
           <HomeP p={t("home.Section-3.Paragraph")} />
           <img className="sertLogo" src={sertLogo} alt="sertlogo" />
           <div className="img-wrapper">
-            <img
-              src={sertificate}
-              alt="sertificate"
-              data-aos="flip-up"
-              data-aos-duration="1000"
-            />
-            <img
-              src={sertificate2}
-              alt="sertificate"
-              data-aos="flip-down"
-              data-aos-duration="1000"
-            />
+            <img src={sertificate} alt="sertificate" data-aos="fade-right" />
+            <img src={sertificate2} alt="sertificate" data-aos="fade-left" />
           </div>
         </div>
         <div className="section-5">
