@@ -75,7 +75,7 @@ export const Header = () => {
               i18n.changeLanguage(i18n.language === "ge" ? "en" : "ge")
             }
           >
-            <span>{{ en: "Geo", ge: "Eng" }[i18n.language]}</span>
+            <span>{{ en: "Geo", ge: "Eng" }[i18n.language] || "Geo"}</span>
           </div>
         </div>
         <div
@@ -85,7 +85,7 @@ export const Header = () => {
           }
           style={{ visibility: !menu ? "visible" : "hidden" }}
         >
-          <span>{{ en: "Geo", ge: "Eng" }[i18n.language]}</span>
+          <span>{{ en: "Geo", ge: "Eng" }[i18n.language] || "Geo"}</span>
         </div>
       </div>
       {menu && (
