@@ -194,8 +194,9 @@
 
     ul {
       display: flex;
-      align-items: baseline;
+      align-items: center;
       margin-bottom: 27px;
+      justify-content: flex-end;
 
       @include small {
         width: 100%;
@@ -204,28 +205,27 @@
         margin-top: 0;
         margin-bottom: 12px;
       }
-    }
-
-    li {
-      margin-right: 40px;
-      margin-top: 0;
-
-      &:first-of-type {
+      li {
+        margin-right: 40px;
         margin-top: 0;
-      }
 
-      &:last-of-type {
-        margin-right: 0px;
-      }
+        &:first-of-type {
+          margin-top: 0;
+        }
 
-      img {
-        width: 28px;
-        height: 28px;
-        margin-right: 0;
-        opacity: 0.5;
+        &:last-of-type {
+          margin-right: 0px;
+        }
 
-        &:hover {
-          opacity: 1;
+        img {
+          width: 28px;
+          height: 28px;
+          margin-right: 0;
+          opacity: 0.5;
+
+          &:hover {
+            opacity: 1;
+          }
         }
       }
     }

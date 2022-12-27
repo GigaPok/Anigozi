@@ -16,24 +16,18 @@ import Burger from "../../../../shared/popup/burger/Burger";
 import { useTranslation } from "react-i18next";
 
 export const Header = () => {
-  function languange(lang) {
-    i18n.changeLanguage(lang);
-
-    setGe(!ge);
-  }
   const { t, i18n } = useTranslation();
 
-  const [ge, setGe] = useState(true);
-  const [menu, setMenu] = useState(true);
+  const [menu, setMenu] = useState(false);
 
-  !menu
+  menu
     ? (document.body.style.overflow = "hidden")
     : (document.body.style.overflow = "auto");
 
   return (
     <>
       <div id="header" className="container">
-        {menu ? (
+        {!menu ? (
           <img
             className="menu"
             src={menuIcon}
@@ -48,7 +42,6 @@ export const Header = () => {
             alt="icon-menu"
           />
         )}
-
         <div className="left-nav ">
           <ul>
             <li>
@@ -76,21 +69,26 @@ export const Header = () => {
               <NavLink to={contact}>{t("nav.Contact")}</NavLink>
             </li>
           </ul>
-          {ge ? (
-            <Link className="lang" onClick={() => languange("ge")}>
-              geo
-            </Link>
-          ) : (
-            <Link className="lang" onClick={() => languange("en")}>
-              en
-            </Link>
-          )}
+          <div
+            className="lang"
+            onClick={() =>
+              i18n.changeLanguage(i18n.language === "ge" ? "en" : "ge")
+            }
+          >
+            <span>{{ en: "Geo", ge: "Eng" }[i18n.language]}</span>
+          </div>
         </div>
-        <Link className="lang-mobile" to="#">
-          geo
-        </Link>
+        <div
+          className="lang-mobile"
+          onClick={() =>
+            i18n.changeLanguage(i18n.language === "ge" ? "en" : "ge")
+          }
+          style={{ visibility: !menu ? "visible" : "hidden" }}
+        >
+          <span>{{ en: "Geo", ge: "Eng" }[i18n.language]}</span>
+        </div>
       </div>
-      {!menu && <Burger />}
+      {menu && <Burger />}
     </>
   );
 };

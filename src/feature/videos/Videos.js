@@ -9,24 +9,42 @@ import videos4 from "../../assets/videos4.png";
 import videos5 from "../../assets/videos5.png";
 import videos6 from "../../assets/videos6.png";
 import videos7 from "../../assets/videos7.png";
+import videos8 from "../../assets/videos8.png";
 import { Video } from "../../shared";
 
 const videos = [
   {
-    title: "Video 1",
-    url: "https://www.youtube.com/embed/kExwsD3bpMo",
+    url: "https://www.youtube.com/embed/ODTtB551d28",
     photo: videos1,
   },
   {
-    title: "Video 2",
-    url: "https://www.youtube.com/embed/kHcgsH1R4OE",
+    url: "https://www.youtube.com/embed/H0sJ11TqprM",
     photo: videos2,
   },
-  { title: "Video 3", url: "url", photo: videos3 },
-  { title: "Video 4", url: "url", photo: videos4 },
-  { title: "Video 5", url: "url", photo: videos5 },
-  { title: "Video 6", url: "url", photo: videos6 },
-  { title: "Video 7", url: "url", photo: videos7 },
+  {
+    url: "https://www.youtube.com/embed/26y5lGDK2Mk",
+    photo: videos3,
+  },
+  {
+    url: "https://www.youtube.com/embed/S3BpGnkk51c",
+    photo: videos4,
+  },
+  {
+    url: "https://www.youtube.com/embed/4XevNo9ca4o",
+    photo: videos5,
+  },
+  {
+    url: "https://www.youtube.com/embed/JjXmV3tdR7k",
+    photo: videos6,
+  },
+  {
+    url: "https://www.youtube.com/embed/XxG8lH6-W7M",
+    photo: videos7,
+  },
+  {
+    url: "https://www.youtube.com/embed/-s2yznWZ0vw",
+    photo: videos8,
+  },
 ];
 
 export const Videos = () => {

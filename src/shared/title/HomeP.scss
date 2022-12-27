@@ -5,15 +5,13 @@ p {
   line-height: 21px;
   color: #686159;
   font-weight: 500;
-  max-width: 735px;
   text-align: center;
-  max-width: 602px;
+  max-width: 650px;
 
   @include small {
     font-size: 12px;
     padding-left: 12px;
     padding-right: 12px;
     line-height: 17px;
-    max-width: 325px;
   }
 }

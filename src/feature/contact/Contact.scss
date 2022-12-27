@@ -52,19 +52,6 @@
           width: 246px;
           line-height: 17px;
         }
-
-        // &::after {
-        //   content: "";
-        //   top: 0;
-        //   left: 0;
-        //   display: block;
-        //   border-bottom: 1px solid #f9f2eb;
-        //   padding-bottom: 10px;
-
-        //   &:last-of-type {
-        //     padding-bottom: 0;
-        //   }
-        // }
       }
       .hed-title {
         color: #fe6f45;
@@ -79,6 +66,10 @@
     padding-left: 300px;
     margin-top: 16px;
     margin-bottom: 16px;
+
+    @include large {
+      padding-left: 150px;
+    }
 
     @include mid {
       padding-left: 30px;

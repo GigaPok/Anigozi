@@ -49,7 +49,7 @@
       "Contact": "კონტაქტი"
     },
     "Tittle": "მხარდაჭერილია:",
-    "Location": "Martkopi village, 0103, Gardabani, Georgia",
+    "Location": "საქართველო, გარდაბანი, 0103, სოფელი მარტყოფი",
     "Rights": "ყველა უფლება დაცულია © 2022"
   },
 
@@ -107,9 +107,10 @@
   "Contact": {
     "Tittle": "კონტაქტი",
     "SubTittle": "Georgia is our passion. Quality from its origins. Quality from Georgia.",
-    "Location": "Production: Martkopi village, 0103, Gardabani, Georgia",
-    "MidTittle": "International Sales",
-    "MidTittle2": "Local Sales"
+    "Location": "წარმოება: საქართველო, გარდაბანი, 0103, სოფელი მარტყოფი",
+    "Office": "ოფისი: სააკაძის დაღმართის 6, 0160, თბილისი, საქართველო",
+    "MidTittle": "საერთაშორისო გაყიდვები",
+    "MidTittle2": "ადგილობრივი გაყიდვები"
   },
 
   "Button": {

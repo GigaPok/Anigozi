@@ -77,30 +77,38 @@
     @include small {
       display: none;
     }
-    .lang {
-      background-color: #fe6f45;
-      padding: 10px 7px;
-      border: none;
-      border-radius: 10px;
-      color: #fff;
-      font-weight: bold;
-      line-height: 19px;
-      text-transform: capitalize;
-      cursor: pointer;
-    }
   }
+  .lang,
   .lang-mobile {
-    display: none;
     background-color: #fe6f45;
-    padding: 10px 7px;
     border: none;
     border-radius: 10px;
-    color: #fff;
     font-weight: bold;
     line-height: 19px;
     text-transform: capitalize;
     cursor: pointer;
-    font-size: 12px;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+    @include small {
+      width: 30px;
+      height: 30px;
+    }
+
+    span {
+      color: #fff;
+      font-size: 14px;
+
+      @include small {
+        font-size: 12px;
+      }
+    }
+  }
+  .lang-mobile {
+    display: none;
 
     @include small {
       display: flex;

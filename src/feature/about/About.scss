@@ -15,9 +15,6 @@
   }
   .about {
     margin-bottom: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
 
     @include small {
       flex-direction: column;
@@ -27,14 +24,25 @@
       padding: 0 !important;
     }
 
-    img {
-      max-width: 620px;
-      margin-left: 16px;
+    .wrapper {
+      display: flex;
+
       @include small {
-        margin-left: 0;
+        flex-direction: column;
+      }
+
+      img {
+        margin-left: 16px;
         width: 100%;
+        object-fit: cover;
+        margin-left: 24px;
+
+        @include small {
+          margin-left: 0;
+        }
       }
     }
+
     h2 {
       margin-top: 81px;
       margin-bottom: 74px;

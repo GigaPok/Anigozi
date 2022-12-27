@@ -137,7 +137,7 @@ export const Footer = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                Martkopi village, 0103, Gardabani, Georgia
+                {t("Footer.Location")}
               </a>
             </li>
           </ul>
@@ -145,24 +145,22 @@ export const Footer = () => {
         <div className="social">
           <ul>
             <li>
-              <Link to="#">
+              <a
+                href="https://www.facebook.com/anigozi22"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <img src={fbIcon} alt="facebook icon" />
-              </Link>
+              </a>
             </li>
             <li>
-              <Link to="#">
-                <img src={instIcon} alt="instagram icon" />
-              </Link>
-            </li>
-            <li>
-              <Link to="#">
-                <img src={twitIcon} alt="twitter icon" />
-              </Link>
-            </li>
-            <li>
-              <Link to="#">
+              <a
+                href="https://www.linkedin.com/in/anna-kevkhishvili-236604102"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <img className="linkdedin" src={linkIcon} alt="linkedin icon" />
-              </Link>
+              </a>
             </li>
           </ul>
           <span>{t("Footer.Rights")}</span>

@@ -15,6 +15,11 @@ h2 {
   padding-right: 300px !important;
   padding-left: 300px !important;
 
+  @include large {
+    padding-right: 150px !important;
+    padding-left: 150px !important;
+  }
+
   @include mid {
     padding-right: 30px !important;
     padding-left: 30px !important;

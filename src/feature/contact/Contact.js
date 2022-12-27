@@ -3,8 +3,11 @@ import "./Contact.scss";
 import { Mainlayout } from "../../core";
 import { HomeTitle } from "../../shared";
 import decor from "../../assets/svg/decor3.svg";
+import { useTranslation } from "react-i18next";
 
 export const Contact = () => {
+  const { t, i18n } = useTranslation();
+
   return (
     <Mainlayout>
       <div id="contact">
@@ -21,15 +24,15 @@ export const Contact = () => {
         </div>
         <div className="wrapper">
           <div className="contact-info">
-            <HomeTitle size="32px" title="Contact" />
+            <HomeTitle size="32px" title={t("Contact.Tittle")} />
             <ul>
-              <li>Production: Martkopi village, 0103, Gardabani, Georgia</li>
+              <li>{t("Contact.Location")}</li>
               <hr />
-              <li>Office: 6, Saakadze descent, 0160, Tbilisi, Georgia</li>
+              <li>{t("Contact.Office")}</li>
               <hr />
               <li>(+995) 322 88 80 88</li>
               <hr />
-              <li className="hed-title">International Sales</li>
+              <li className="hed-title">{t("Contact.MidTittle")}</li>
               <hr />
               <li>
                 (+995) 592 700 010 <span>WhatsApp</span>
@@ -37,7 +40,7 @@ export const Contact = () => {
               <hr />
               <li>Ana@anigozi.com</li>
               <hr />
-              <li className="hed-title">Local Sales</li>
+              <li className="hed-title">{t("Contact.MidTittle2")}</li>
               <hr />
               <li>
                 (+995) 557 94 10 91 <span>WhatsApp</span>

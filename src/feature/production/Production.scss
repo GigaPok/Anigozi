@@ -23,12 +23,17 @@
     .prod {
       padding-left: 300px;
 
+      @include large {
+        padding-left: 150px;
+      }
+
       @include mid {
         padding: 0;
         align-items: center;
         display: flex;
         flex-direction: column;
         grid-column: 1 / 3;
+        padding-left: 0px !important;
       }
       h2 {
         margin-top: 81px;
@@ -48,6 +53,10 @@
         margin-bottom: 74px;
 
         @include mid {
+          margin-bottom: 32px;
+        }
+
+        @include small {
           font-size: 12px;
           line-height: 17px;
           margin-bottom: 32px;
@@ -79,7 +88,6 @@
     }
   }
   .production {
-    padding-left: 300px;
     display: flex;
   }
 
