@@ -9,7 +9,7 @@
       @include small {
         margin-top: 12px;
         min-height: 228px;
-        object-fit: contain;
+        object-fit: cover;
       }
     }
   }
@@ -26,7 +26,7 @@
 
     .wrapper {
       display: flex;
-      align-items: start;
+      align-items: flex-start;
 
       @include small {
         flex-direction: column;

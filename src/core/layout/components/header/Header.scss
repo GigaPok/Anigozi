@@ -6,6 +6,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 15px 0;
+  text-align: center;
 
   @include small {
     padding: 21px 0;
@@ -22,6 +23,7 @@
     }
   }
   .left-nav {
+    flex: 1;
     @include small {
       display: none;
     }
@@ -63,6 +65,7 @@
     }
   }
   .logo-wrapper {
+    flex: 1;
     img {
       @include small {
         max-width: 113px;
@@ -73,6 +76,8 @@
   .right-nav {
     display: flex;
     align-items: center;
+    flex: 1;
+    justify-content: flex-end;
 
     @include small {
       display: none;

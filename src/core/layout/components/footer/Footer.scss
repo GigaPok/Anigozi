@@ -15,10 +15,13 @@
     .up {
       display: none;
       background-color: #fe6f45;
-      padding: 7px 10px 8px 10px;
       border-radius: 7px;
       cursor: pointer;
       border: none;
+      width: 30px;
+      height: 30px;
+      align-items: center;
+      justify-content: center;
 
       @include small {
         display: flex;

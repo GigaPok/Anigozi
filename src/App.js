@@ -2,6 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import "./App.scss";
 import { Home, Contact, Products, Videos, About, Production } from "./feature";
 import { home, contact, products, videos, about, production } from "./router";
+// import Test from "./Test";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path={about} element={<About />} exact />
         <Route path={production} element={<Production exact />} />
       </Routes>
+      {/* <Test /> */}
     </div>
   );
 }
