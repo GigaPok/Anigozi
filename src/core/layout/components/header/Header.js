@@ -89,7 +89,12 @@ export const Header = () => {
         </div>
       </div>
       {menu && (
-        <div className="burger">
+        <div
+          className="burger"
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1000"
+        >
           <ul>
             <li>
               <NavLink onClick={() => setMenu(!menu)} to={about}>

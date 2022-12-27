@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Home.scss";
 import { Mainlayout } from "../../core";
 import graphic from "../../assets/graphic.png";
@@ -18,6 +18,7 @@ import decorTop from "../../assets/svg/decor.svg";
 import decorBottom from "../../assets/svg/decorB.svg";
 import { products, about, production } from "../../router";
 import { useTranslation } from "react-i18next";
+import AOS from "aos";
 
 export const Home = () => {
   const { t, i18n } = useTranslation();
@@ -39,6 +40,10 @@ export const Home = () => {
       p: t("home.Section-5.Standards-P"),
     },
   ];
+
+  useEffect(() => {
+    AOS.init();
+  }, []);
 
   return (
     <Mainlayout>
@@ -71,8 +76,8 @@ export const Home = () => {
           </div>
 
           <div className="img-wrapper">
-            <img src={anigozi1} alt="kakali" />
-            <img src={anigozi2} alt="kakali garcheuli" />
+            <img src={anigozi1} alt="kakali" data-aos="fade-right" />
+            <img src={anigozi2} alt="kakali garcheuli" data-aos="fade-left" />
           </div>
         </div>
         <div className="section-3">
@@ -87,8 +92,8 @@ export const Home = () => {
             />
           </div>
           <div className="img-wrapper">
-            <img src={production1} alt="production" />
-            <img src={production2} alt="production " />
+            <img src={production1} alt="production" data-aos="flip-left" />
+            <img src={production2} alt="production " data-aos="flip-right" />
           </div>
         </div>
         <div className="section-4">
@@ -96,8 +101,18 @@ export const Home = () => {
           <HomeP p={t("home.Section-3.Paragraph")} />
           <img className="sertLogo" src={sertLogo} alt="sertlogo" />
           <div className="img-wrapper">
-            <img src={sertificate} alt="sertificate" />
-            <img src={sertificate2} alt="sertificate" />
+            <img
+              src={sertificate}
+              alt="sertificate"
+              data-aos="flip-up"
+              data-aos-duration="1000"
+            />
+            <img
+              src={sertificate2}
+              alt="sertificate"
+              data-aos="flip-down"
+              data-aos-duration="1000"
+            />
           </div>
         </div>
         <div className="section-5">
