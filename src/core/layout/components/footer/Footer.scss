@@ -246,3 +246,15 @@
     }
   }
 }
+
+.by {
+  margin-top: 12px;
+
+  a {
+    color: #686159;
+
+    &:hover {
+      color: #3d3933;
+    }
+  }
+}

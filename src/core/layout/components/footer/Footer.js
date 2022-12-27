@@ -18,9 +18,7 @@ import phoneIcon from "../../../../assets/svg/phone.svg";
 import mapIcon from "../../../../assets/svg/map.svg";
 import mailIcon from "../../../../assets/svg/mail.svg";
 import fbIcon from "../../../../assets/svg/fbIcon.svg";
-import instIcon from "../../../../assets/svg/instIcon.svg";
 import linkIcon from "../../../../assets/svg/linkedin.svg";
-import twitIcon from "../../../../assets/svg/twitIcon.svg";
 import arrow from "../../../../assets/svg/arrow.svg";
 import { useTranslation } from "react-i18next";
 
@@ -163,7 +161,13 @@ export const Footer = () => {
               </a>
             </li>
           </ul>
-          <span>{t("Footer.Rights")}</span>
+          <span>{t("Footer.Rights")} </span>
+          <span className="by">
+            Created By -{" "}
+            <a href="https://gigapok.github.io/CV/eng.html" target="_blank">
+              Giga
+            </a>
+          </span>
         </div>
       </div>
     </div>
