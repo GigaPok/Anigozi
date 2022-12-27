@@ -95,12 +95,14 @@
         @include mid {
           flex-direction: column;
           padding: 12px 20px 12px 9px;
+          aspect-ratio: 1 / 1;
         }
 
         img {
           @include mid {
             width: 100%;
-            max-width: 147px;
+            max-width: 250px;
+            height: 50%;
           }
         }
       }
