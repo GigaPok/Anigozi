@@ -13,7 +13,7 @@ export const Contact = () => {
       <div id="contact">
         <div className="map">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2979.1156733388725!2d45.02274523222523!3d41.69643851834051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4044118a550183b3%3A0x22100d690afd68b2!2sAnigozi%20LLC!5e0!3m2!1sen!2sge!4v1672247597118!5m2!1sen!2sge"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1489.566603257028!2d45.02262721503817!3d41.69605999737627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa99bac030caafa5f!2zIuGDkOGDnOGDmOGDkuGDneGDluGDmCI!5e0!3m2!1sen!2sge!4v1672248207799!5m2!1sen!2sge"
             width="100%"
             height="228"
             allowFullScreen=""
