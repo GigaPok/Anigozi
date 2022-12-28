@@ -11,6 +11,7 @@ import videos6 from "../../assets/videos6.png";
 import videos7 from "../../assets/videos7.png";
 import videos8 from "../../assets/videos8.png";
 import { Video } from "../../shared";
+import { useTranslation } from "react-i18next";
 
 const videos = [
   {
@@ -54,15 +55,15 @@ export const Videos = () => {
     setVideoLink("");
   };
 
+  const { t, i18n } = useTranslation();
+
   return (
     <>
       <Mainlayout>
         <div id="videos">
           <div className="cover container">
             <img src={decor} alt="decor" />
-            <span>
-              Please, check the information and news of our business below.
-            </span>
+            <span>{t("Videos.Tittle")}</span>
             <img src={decor} alt="decor" />
           </div>
           <div className="videos-wrapper container">

@@ -92,7 +92,7 @@
   },
 
   "Videos": {
-    "Tittle": "Please, check the information and news of our business below.",
+    "Tittle": "გაეცანით მეტს კომპანიისა და ანიგოზის წარმოების შესახებ.",
     "VideoTittle": {
       "Video1": "სათაური 1",
       "Video2": "სათაური 2",
@@ -106,7 +106,7 @@
 
   "Contact": {
     "Tittle": "კონტაქტი",
-    "SubTittle": "Georgia is our passion. Quality from its origins. Quality from Georgia.",
+    "SubTittle": "ჩვენი კაკალი ნაყოფიერი ქართული მიწის ნაყოფია. ხარისხი საქართველოდან.",
     "Location": "წარმოება: საქართველო, გარდაბანი, 0103, სოფელი მარტყოფი",
     "Office": "ოფისი: სააკაძის დაღმართის 6, 0160, თბილისი, საქართველო",
     "MidTittle": "საერთაშორისო გაყიდვები",

@@ -13,7 +13,7 @@ export const Contact = () => {
       <div id="contact">
         <div className="map">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2975.514574264334!2d45.0231197!3d41.7741227!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x404415a71b15b8c9%3A0xe59a7b07fd320587!2sMartkopi!5e0!3m2!1sen!2sge!4v1671375947691!5m2!1sen!2sge"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2979.1156733388725!2d45.02274523222523!3d41.69643851834051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4044118a550183b3%3A0x22100d690afd68b2!2sAnigozi%20LLC!5e0!3m2!1sen!2sge!4v1672247597118!5m2!1sen!2sge"
             width="100%"
             height="228"
             allowFullScreen=""
@@ -54,10 +54,7 @@ export const Contact = () => {
               style={{ backgroundImage: `url(${decor})` }}
               className="backImage"
             >
-              <p>
-                Georgia is our passion. Quality from its origins. Quality from
-                Georgia.
-              </p>
+              <p>{t("Contact.SubTittle")}</p>
             </div>
           </div>
         </div>
