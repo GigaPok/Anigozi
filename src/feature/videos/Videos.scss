@@ -76,6 +76,10 @@
         font-weight: bold;
         line-height: 24px;
         color: #686159;
+
+        @include mid {
+          font-size: 14px;
+        }
       }
 
       img {

@@ -34,6 +34,11 @@
       max-width: 620px;
       margin-top: 16px;
 
+      @include mid {
+        max-height: 260px;
+      }
+      
+
       @include small {
         max-width: 247px;
       }
@@ -54,10 +59,11 @@
     }
 
     p {
-      font-size: 16px;
-      line-height: 24px;
+      font-size: 14px;
+      line-height: 22px;
       max-width: 610px;
       text-align: start;
+
 
       @include small {
         font-size: 12px;

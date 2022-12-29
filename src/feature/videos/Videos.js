@@ -25,7 +25,7 @@ const videos = [
     photo: videos2,
   },
   {
-    title: "Business partner - about Government support to agriculture business sector.",
+    title: "Business partner - Government support to agriculture business sector.",
     url: "https://www.youtube.com/embed/26y5lGDK2Mk",
     photo: videos3,
   },
