@@ -2,6 +2,7 @@ import React from "react";
 import "./Video.scss";
 
 export const Video = ({ url, onClose }) => {
+
   return (
     <div className="popup">
       <iframe
@@ -13,7 +14,7 @@ export const Video = ({ url, onClose }) => {
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
       ></iframe>
-      <span className="close" onClick={onClose}>
+      <span className="close"  onClick={onClose}>
         X
       </span>
     </div>

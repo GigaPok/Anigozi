@@ -10,6 +10,10 @@
   }
   h2 {
     margin-top: 75px;
+
+    @include mid {
+      margin: 32px 0;
+    }
     @include small {
       margin-top: 32px;
       font-size: 28px !important;
@@ -44,6 +48,10 @@
           @include small {
             margin-top: 0;
           }
+        }
+
+        @include mid {
+          font-size: 15px;
         }
 
         @include small {
@@ -140,6 +148,10 @@
           color: #d1b89f;
           z-index: 2;
           transform: translate(-50%, -50%);
+
+          @include mid {
+            transform: translate(-32%, -50%);
+          }
 
           @include small {
             font-size: 18px;

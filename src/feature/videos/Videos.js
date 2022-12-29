@@ -15,34 +15,42 @@ import { useTranslation } from "react-i18next";
 
 const videos = [
   {
+    title: "Made in Georgia - Anigozi at BMG",
     url: "https://www.youtube.com/embed/ODTtB551d28",
     photo: videos1,
   },
   {
+    title: "EastFruit about Anigozi walnut facility",
     url: "https://www.youtube.com/embed/H0sJ11TqprM",
     photo: videos2,
   },
   {
+    title: "Business partner - about Government support to agriculture business sector.",
     url: "https://www.youtube.com/embed/26y5lGDK2Mk",
     photo: videos3,
   },
   {
+    title: "Anna Kevkhishvili - about Anigozi walnuts.",
     url: "https://www.youtube.com/embed/S3BpGnkk51c",
     photo: videos4,
   },
   {
+    title: "Adjarian TV at Anigozi facility",
     url: "https://www.youtube.com/embed/4XevNo9ca4o",
     photo: videos5,
   },
   {
+    title: "#Ferma at Anigozi facility.",
     url: "https://www.youtube.com/embed/JjXmV3tdR7k",
     photo: videos6,
   },
   {
+    title: "Nuts of ukraine international conference - exchanging experience.",
     url: "https://www.youtube.com/embed/XxG8lH6-W7M",
     photo: videos7,
   },
   {
+    title: "EBRD and BOG supporting Anigozi",
     url: "https://www.youtube.com/embed/-s2yznWZ0vw",
     photo: videos8,
   },
@@ -78,7 +86,6 @@ export const Videos = () => {
               </div>
             ))}
           </div>
-          <span>X</span>
         </div>
       </Mainlayout>
       {videoLink && <Video url={videoLink} onClose={onClose} />}

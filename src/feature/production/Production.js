@@ -17,8 +17,8 @@ export const Production = () => {
     <Mainlayout>
       <div id="production">
         <div className="cover">
-          <img src={productionCover} alt="productionCover" />
-          <img src={productionCover2} alt="productionCover" />
+          <img className="cover-img" src={productionCover} alt="productionCover" />
+          <img className="cover-img" src={productionCover2} alt="productionCover" />
           <div className="prod">
             <HomeTitle size="32px" title={t("Production.Tittle")} />
             <p>

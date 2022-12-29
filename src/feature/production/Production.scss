@@ -15,9 +15,17 @@
 
     img {
       width: 100%;
+
+      
       @include small {
         min-height: 228px;
         object-fit: cover;
+      }
+    }
+    .cover-img {
+      @include mid {
+        height: 100%;
+        object-fit: fill;
       }
     }
     .prod {
@@ -28,6 +36,10 @@
       }
 
       @include mid {
+        padding-left: 30px;
+      }
+
+      @include small {
         padding: 0;
         align-items: center;
         display: flex;
@@ -67,7 +79,7 @@
       background-color: #f9f2eb;
       padding: 66px 0 66px 63px;
 
-      @include mid {
+      @include small {
         display: none;
       }
       .backImage {

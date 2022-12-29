@@ -54,6 +54,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 16px;
+    align-items: self-end;
 
     @include small {
       grid-template-columns: 1fr;
