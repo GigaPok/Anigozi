@@ -194,7 +194,6 @@
 
     @include small {
       flex-direction: column;
-      object-fit: cover;
     }
 
     img {
@@ -205,6 +204,7 @@
         @include small {
           margin-left: 0;
           margin-top: 12px;
+      object-fit: cover;
         }
       }
 
