@@ -194,6 +194,7 @@
 
     @include small {
       flex-direction: column;
+      object-fit: cover;
     }
 
     img {
