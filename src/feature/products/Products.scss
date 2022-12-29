@@ -18,7 +18,12 @@
     margin-bottom: 100px;
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
+    margin-top: 81px;
+
+    @include mid {
+      margin-top: 32px;
+    }
 
     @include small {
       margin-bottom: 32px;
@@ -32,12 +37,11 @@
 
     img {
       max-width: 620px;
-      margin-top: 16px;
 
       @include mid {
         max-height: 260px;
       }
-      
+
 
       @include small {
         max-width: 247px;
@@ -45,15 +49,14 @@
     }
 
     h2 {
-      margin-top: 81px;
       margin-bottom: 74px;
+      margin-top: 0;
 
       @include mid {
-        margin: 32px 0;
+        margin-bottom: 32px;
       }
 
       @include small {
-        margin: 32px 0;
         font-size: 28px !important;
       }
     }
@@ -123,8 +126,7 @@
         img {
           @include mid {
             width: 100%;
-            max-width: 250px;
-            height: 50%;
+            height: 60%;
           }
         }
       }

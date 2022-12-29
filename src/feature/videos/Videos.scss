@@ -19,12 +19,12 @@
     @include small {
       background-image: url(../../assets/svg/decor3.svg);
       background-repeat: no-repeat;
-      width: 100%;
       min-height: 196px;
       display: flex;
       justify-content: center;
       background-size: contain;
       background-position: center;
+      background-origin: content-box;
     }
 
     img {
