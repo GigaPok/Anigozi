@@ -162,12 +162,6 @@ export const Footer = () => {
             </li>
           </ul>
           <span>{t("Footer.Rights")} </span>
-          <span className="by">
-            Created By -{" "}
-            <a href="https://gigapok.github.io/CV/eng.html" target="_blank">
-              Giga
-            </a>
-          </span>
         </div>
       </div>
     </div>

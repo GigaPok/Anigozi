@@ -19,9 +19,10 @@
     display: flex;
     justify-content: space-between;
     margin-top: 81px;
+    align-items: center;
 
     @include mid {
-      margin-top: 32px;
+      margin-top: 45px;
     }
 
     @include small {

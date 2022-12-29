@@ -49,7 +49,8 @@
       margin-bottom: 74px;
 
       @include mid {
-        margin: 32px 0;
+        margin-bottom: 32px;
+        margin-top: 45px;
         line-height: 38px;
       }
 
