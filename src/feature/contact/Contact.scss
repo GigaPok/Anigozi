@@ -12,7 +12,9 @@
     margin-top: 75px;
 
     @include mid {
-      margin: 32px 0;
+      margin-bottom: 32px;
+      margin-top: 16px;
+      line-height: 38px;
     }
     @include small {
       margin-top: 32px;

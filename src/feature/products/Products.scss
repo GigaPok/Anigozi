@@ -18,7 +18,6 @@
     margin-bottom: 100px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     margin-top: 81px;
 
     @include mid {
@@ -54,6 +53,7 @@
 
       @include mid {
         margin-bottom: 32px;
+        line-height: 38px;
       }
 
       @include small {
