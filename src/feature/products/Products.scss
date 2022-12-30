@@ -24,7 +24,7 @@
     @include mid {
       margin-top: 45px;
       align-items: inherit;
-      margin-bottom: 45px;
+      margin-bottom: 0;
     }
 
     @include small {
@@ -92,9 +92,14 @@
       color: #82796e;
       line-height: 34px;
 
+      @include mid {
+        margin-top: 0;
+      }
+
       @include small {
         font-size: 18px;
         margin-bottom: 12px;
+        margin-top: 22px;
       }
     }
 
