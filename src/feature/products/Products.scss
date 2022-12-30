@@ -23,6 +23,8 @@
 
     @include mid {
       margin-top: 45px;
+      align-items: inherit;
+      margin-bottom: 45px;
     }
 
     @include small {
