@@ -21,7 +21,7 @@ import { useTranslation } from "react-i18next";
 import AOS from "aos";
 
 export const Home = () => {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
   const Cards = [
     {

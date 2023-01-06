@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "./Header.scss";
 import { NavLink, Link } from "react-router-dom";
 import {
@@ -24,8 +24,6 @@ export const Header = () => {
   menu
     ? (document.body.style.overflow = "hidden")
     : (document.body.style.overflow = "auto");
-
-  console.log(i18n.language);
 
   return (
     <>

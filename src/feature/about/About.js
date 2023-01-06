@@ -7,7 +7,7 @@ import { HomeTitle } from "../../shared";
 import { useTranslation } from "react-i18next";
 
 export const About = () => {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
   return (
     <Mainlayout>

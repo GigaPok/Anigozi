@@ -80,22 +80,27 @@ export const Footer = () => {
       </div>
       <div className="support-wrapper container">
         <span className="web"> {t("Footer.Tittle")}</span>
-        <a href="https://eu4georgia.eu/" target="_blank">
+        <a href="https://eu4georgia.eu/" target="_blank" rel="noreferrer">
           <img className="web" src={eugeorgia} alt="eugeorgia logo" />
         </a>
         <a
           href="https://www.ebrd.com/news/2022/ebrd-and-eu-support-walnut-refiner-in-georgia.html"
           target="_blank"
+          rel="noreferrer"
         >
           <img className="web" src={ebrd} alt="ebrd logo" />
         </a>
-        <a href="http://www.rda.gov.ge/" target="_blank">
+        <a href="http://www.rda.gov.ge/" target="_blank" rel="noreferrer">
           <img className="web" src={og} alt="og logo" />
         </a>
-        <a href="https://mapapgeorgia.org/" target="_blank">
+        <a href="https://mapapgeorgia.org/" target="_blank" rel="noreferrer">
           <img className="web" src={USAID} alt="USAID logo" />
         </a>
-        <a href="https://www.enterprisegeorgia.gov.ge/" target="_blank">
+        <a
+          href="https://www.enterprisegeorgia.gov.ge/"
+          target="_blank"
+          rel="noreferrer"
+        >
           <img className="web" src={enterge} alt="enterge logo" />
         </a>
 
@@ -103,27 +108,36 @@ export const Footer = () => {
           <span> {t("Footer.Tittle")}</span>
           <div className="wrapper">
             <div>
-              <a href="https://eu4georgia.eu/" target="_blank">
+              <a href="https://eu4georgia.eu/" target="_blank" rel="noreferrer">
                 <img src={eugeorgia} alt="eugeorgia logo" />
               </a>
 
               <a
                 href="https://www.ebrd.com/news/2022/ebrd-and-eu-support-walnut-refiner-in-georgia.html"
                 target="_blank"
+                rel="noreferrer"
               >
                 <img src={ebrd} alt="ebrd logo" />
               </a>
             </div>
             <div>
-              <a href="http://www.rda.gov.ge/" target="_blank">
+              <a href="http://www.rda.gov.ge/" target="_blank" rel="noreferrer">
                 <img src={og} alt="og logo" />
               </a>
-              <a href="https://mapapgeorgia.org/" target="_blank">
+              <a
+                href="https://mapapgeorgia.org/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <img src={USAID} alt="USAID logo" />
               </a>
             </div>
             <div>
-              <a href="https://www.enterprisegeorgia.gov.ge/" target="_blank">
+              <a
+                href="https://www.enterprisegeorgia.gov.ge/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <img src={enterge} alt="enterge logo" />
               </a>
             </div>

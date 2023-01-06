@@ -13,7 +13,6 @@ import videos8 from "../../assets/videos8.png";
 import { Video } from "../../shared";
 import { useTranslation } from "react-i18next";
 
-
 export const Videos = () => {
   const [videoLink, setVideoLink] = useState();
 
@@ -21,7 +20,7 @@ export const Videos = () => {
     setVideoLink("");
   };
 
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
   const videos = [
     {
@@ -65,7 +64,6 @@ export const Videos = () => {
       photo: videos8,
     },
   ];
-  
 
   return (
     <>

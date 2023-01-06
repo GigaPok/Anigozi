@@ -6,7 +6,7 @@ import decor from "../../assets/svg/decor3.svg";
 import { useTranslation } from "react-i18next";
 
 export const Contact = () => {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
   return (
     <Mainlayout>
