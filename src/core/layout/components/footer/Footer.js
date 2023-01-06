@@ -101,7 +101,7 @@ export const Footer = () => {
 
         <div className="mobile">
           <span> {t("Footer.Tittle")}</span>
-          <div className="s">
+          <div className="wrapper">
             <div>
               <a href="https://eu4georgia.eu/" target="_blank">
                 <img src={eugeorgia} alt="eugeorgia logo" />

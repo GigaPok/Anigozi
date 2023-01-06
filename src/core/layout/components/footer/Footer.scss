@@ -93,6 +93,7 @@
     img {
       max-width: 135px;
       width: 100%;
+      object-fit: contain;
 
       @include small {
         max-width: 200px;
@@ -116,7 +117,7 @@
         margin-bottom: 25px;
       }
 
-      .s {
+      .wrapper {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
 
