@@ -24,7 +24,7 @@ export const Header = () => {
   menu
     ? (document.body.style.overflow = "hidden")
     : (document.body.style.overflow = "auto");
-   
+
   return (
     <>
       <div id="header" className="container">
@@ -58,7 +58,10 @@ export const Header = () => {
         </div>
         <div className="logo-wrapper">
           <Link to={home}>
-            <img src={i18n.language === "en" ? logo : gelogo} alt="anigozi logo " />
+            <img
+              src={i18n.language === "en" ? gelogo : logo}
+              alt="anigozi logo "
+            />
           </Link>
         </div>
         <div className="right-nav">
