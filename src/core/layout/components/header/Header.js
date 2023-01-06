@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Header.scss";
 import { NavLink, Link } from "react-router-dom";
 import {
@@ -24,6 +24,8 @@ export const Header = () => {
   menu
     ? (document.body.style.overflow = "hidden")
     : (document.body.style.overflow = "auto");
+
+  console.log(i18n.language);
 
   return (
     <>
@@ -59,7 +61,7 @@ export const Header = () => {
         <div className="logo-wrapper">
           <Link to={home}>
             <img
-              src={i18n.language === "en" ? gelogo : logo}
+              src={i18n.language === "en" ? logo : gelogo}
               alt="anigozi logo "
             />
           </Link>

@@ -36,7 +36,7 @@ export const Footer = () => {
       <div className="footer-header container">
         <Link to="/" onClick={() => scrollUp()}>
           <img
-            src={i18n.language === "en" ? gelogo : logo}
+            src={i18n.language === "en" ? logo : gelogo}
             alt="avigozi logo"
           />
         </Link>
