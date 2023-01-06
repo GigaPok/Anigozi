@@ -12,6 +12,7 @@ i18n
   .use(initReactI18next)
   .init({
     fallbackLng: "en",
+    lng: "en",
     debug: true,
     whitelist: languages,
 
