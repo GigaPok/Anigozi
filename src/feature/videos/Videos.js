@@ -13,48 +13,6 @@ import videos8 from "../../assets/videos8.png";
 import { Video } from "../../shared";
 import { useTranslation } from "react-i18next";
 
-const videos = [
-  {
-    title: "Made in Georgia - Anigozi at BMG",
-    url: "https://www.youtube.com/embed/ODTtB551d28",
-    photo: videos1,
-  },
-  {
-    title: "EastFruit about Anigozi walnut facility",
-    url: "https://www.youtube.com/embed/H0sJ11TqprM",
-    photo: videos2,
-  },
-  {
-    title: "Business partner - Government support to agriculture business sector.",
-    url: "https://www.youtube.com/embed/26y5lGDK2Mk",
-    photo: videos3,
-  },
-  {
-    title: "Anna Kevkhishvili - about Anigozi walnuts.",
-    url: "https://www.youtube.com/embed/S3BpGnkk51c",
-    photo: videos4,
-  },
-  {
-    title: "Adjarian TV at Anigozi facility",
-    url: "https://www.youtube.com/embed/4XevNo9ca4o",
-    photo: videos5,
-  },
-  {
-    title: "#Ferma at Anigozi facility.",
-    url: "https://www.youtube.com/embed/JjXmV3tdR7k",
-    photo: videos6,
-  },
-  {
-    title: "Nuts of ukraine international conference - exchanging experience.",
-    url: "https://www.youtube.com/embed/XxG8lH6-W7M",
-    photo: videos7,
-  },
-  {
-    title: "EBRD and BOG supporting Anigozi",
-    url: "https://www.youtube.com/embed/-s2yznWZ0vw",
-    photo: videos8,
-  },
-];
 
 export const Videos = () => {
   const [videoLink, setVideoLink] = useState();
@@ -64,6 +22,50 @@ export const Videos = () => {
   };
 
   const { t, i18n } = useTranslation();
+
+  const videos = [
+    {
+      title: t("Videos.VideoTittle.Video1"),
+      url: "https://www.youtube.com/embed/ODTtB551d28",
+      photo: videos1,
+    },
+    {
+      title: t("Videos.VideoTittle.Video2"),
+      url: "https://www.youtube.com/embed/H0sJ11TqprM",
+      photo: videos2,
+    },
+    {
+      title: t("Videos.VideoTittle.Video3"),
+      url: "https://www.youtube.com/embed/26y5lGDK2Mk",
+      photo: videos3,
+    },
+    {
+      title: t("Videos.VideoTittle.Video4"),
+      url: "https://www.youtube.com/embed/S3BpGnkk51c",
+      photo: videos4,
+    },
+    {
+      title: t("Videos.VideoTittle.Video5"),
+      url: "https://www.youtube.com/embed/4XevNo9ca4o",
+      photo: videos5,
+    },
+    {
+      title: t("Videos.VideoTittle.Video6"),
+      url: "https://www.youtube.com/embed/JjXmV3tdR7k",
+      photo: videos6,
+    },
+    {
+      title: t("Videos.VideoTittle.Video7"),
+      url: "https://www.youtube.com/embed/XxG8lH6-W7M",
+      photo: videos7,
+    },
+    {
+      title: t("Videos.VideoTittle.Video8"),
+      url: "https://www.youtube.com/embed/-s2yznWZ0vw",
+      photo: videos8,
+    },
+  ];
+  
 
   return (
     <>

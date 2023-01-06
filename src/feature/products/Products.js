@@ -13,31 +13,32 @@ import light from "../../assets/svg/light.svg";
 import lightamber from "../../assets/svg/lightamber.svg";
 import { useTranslation } from "react-i18next";
 
-const shells = [
-  {
-    title: "Chandler",
-    img: Chandler,
-    background: "#82796E",
-  },
-  {
-    title: "Lara",
-    img: Lara,
-    background: "#105E25",
-  },
-  {
-    title: "Howard",
-    img: Howard,
-    background: "#FE6F45",
-  },
-  {
-    title: "Fernor",
-    img: Fernor,
-    background: "#D1B89F",
-  },
-];
-
 export const Products = () => {
+
   const { t, i18n } = useTranslation();
+
+  const shells = [
+    {
+      title: t("Products.CardNames.Chandler"),
+      img: Chandler,
+      background: "#82796E",
+    },
+    {
+      title: t("Products.CardNames.Lara"),
+      img: Lara,
+      background: "#105E25",
+    },
+    {
+      title: t("Products.CardNames.Howard"),
+      img: Howard,
+      background: "#FE6F45",
+    },
+    {
+      title: t("Products.CardNames.Fernor"),
+      img: Fernor,
+      background: "#D1B89F",
+    },
+  ];
 
   return (
     <Mainlayout>

@@ -10,10 +10,12 @@ import {
   production,
 } from "../../../../router";
 import logo from "../../../../assets/svg/logo.svg";
+import gelogo from "../../../../assets/svg/logogeo.svg";
 import ebrd from "../../../../assets/ebrd.png";
 import eugeorgia from "../../../../assets/svg/eu.svg";
 import og from "../../../../assets/svg/og.svg";
 import USAID from "../../../../assets/svg/USAID.svg";
+import enterge from "../../../../assets/svg/enterge.svg";
 import phoneIcon from "../../../../assets/svg/phone.svg";
 import mapIcon from "../../../../assets/svg/map.svg";
 import mailIcon from "../../../../assets/svg/mail.svg";
@@ -32,8 +34,11 @@ export const Footer = () => {
   return (
     <div id="footer">
       <div className="footer-header container">
-        <Link to="/">
-          <img src={logo} alt="avigozi logo" />
+        <Link to="/" onClick={() => scrollUp()}>
+          <img
+            src={i18n.language === "en" ? logo : gelogo}
+            alt="avigozi logo"
+          />
         </Link>
         <button className="up" onClick={() => scrollUp()}>
           <img src={arrow} alt="upp icon" />
@@ -75,18 +80,53 @@ export const Footer = () => {
       </div>
       <div className="support-wrapper container">
         <span className="web"> {t("Footer.Tittle")}</span>
-        <img className="web" src={eugeorgia} alt="eugeorgia logo" />
-        <img className="web" src={ebrd} alt="ebrd logo" />
-        <img className="web" src={og} alt="og logo" />
-        <img className="web" src={USAID} alt="USAID logo" />
+        <a href="https://eu4georgia.eu/" target="_blank">
+          <img className="web" src={eugeorgia} alt="eugeorgia logo" />
+        </a>
+        <a
+          href="https://www.ebrd.com/news/2022/ebrd-and-eu-support-walnut-refiner-in-georgia.html"
+          target="_blank"
+        >
+          <img className="web" src={ebrd} alt="ebrd logo" />
+        </a>
+        <a href="http://www.rda.gov.ge/" target="_blank">
+          <img className="web" src={og} alt="og logo" />
+        </a>
+        <a href="https://mapapgeorgia.org/" target="_blank">
+          <img className="web" src={USAID} alt="USAID logo" />
+        </a>
+        <a href="https://www.enterprisegeorgia.gov.ge/" target="_blank">
+          <img className="web" src={enterge} alt="enterge logo" />
+        </a>
 
         <div className="mobile">
           <span> {t("Footer.Tittle")}</span>
-          <div>
-            <img src={eugeorgia} alt="eugeorgia logo" />
-            <img src={ebrd} alt="ebrd logo" />
-            <img src={og} alt="og logo" />
-            <img src={USAID} alt="USAID logo" />
+          <div className="s">
+            <div>
+              <a href="https://eu4georgia.eu/" target="_blank">
+                <img src={eugeorgia} alt="eugeorgia logo" />
+              </a>
+
+              <a
+                href="https://www.ebrd.com/news/2022/ebrd-and-eu-support-walnut-refiner-in-georgia.html"
+                target="_blank"
+              >
+                <img src={ebrd} alt="ebrd logo" />
+              </a>
+            </div>
+            <div>
+              <a href="http://www.rda.gov.ge/" target="_blank">
+                <img src={og} alt="og logo" />
+              </a>
+              <a href="https://mapapgeorgia.org/" target="_blank">
+                <img src={USAID} alt="USAID logo" />
+              </a>
+            </div>
+            <div>
+              <a href="https://www.enterprisegeorgia.gov.ge/" target="_blank">
+                <img src={enterge} alt="enterge logo" />
+              </a>
+            </div>
           </div>
         </div>
       </div>

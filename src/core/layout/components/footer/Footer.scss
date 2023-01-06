@@ -91,6 +91,7 @@
 
     img {
       max-width: 210px;
+      width: 100%;
     }
     .web {
       @include small {
@@ -110,9 +111,35 @@
         margin-bottom: 25px;
       }
 
-      div {
+      .s {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+
+        div {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+
+          a {
+            flex: 1;
+            &:first-of-type {
+              margin-right: 25px;
+            }
+
+            &:last-of-type {
+              margin-right: 0;
+            }
+            img {
+              width: 100%;
+
+              @media (max-width: 480px) {
+                max-width: 140px;
+              }
+            }
+          }
+        }
+
         @include small {
           gap: 25px;
         }

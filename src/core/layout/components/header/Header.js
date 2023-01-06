@@ -10,6 +10,7 @@ import {
   production,
 } from "../../../../router";
 import logo from "../../../../assets/svg/logo.svg";
+import gelogo from "../../../../assets/svg/logogeo.svg";
 import menuIcon from "../../../../assets/svg/menu.svg";
 import menuActive from "../../../../assets/svg/activeMenu.svg";
 import logoIcon from "../../../../assets/svg/decor3.svg";
@@ -23,7 +24,7 @@ export const Header = () => {
   menu
     ? (document.body.style.overflow = "hidden")
     : (document.body.style.overflow = "auto");
-
+   
   return (
     <>
       <div id="header" className="container">
@@ -57,7 +58,7 @@ export const Header = () => {
         </div>
         <div className="logo-wrapper">
           <Link to={home}>
-            <img src={logo} alt="anigozi logo " />
+            <img src={i18n.language === "en" ? logo : gelogo} alt="anigozi logo " />
           </Link>
         </div>
         <div className="right-nav">
