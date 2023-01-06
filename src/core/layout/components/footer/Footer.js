@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Footer.scss";
 import { Link } from "react-router-dom";
 import {
@@ -36,7 +36,7 @@ export const Footer = () => {
       <div className="footer-header container">
         <Link to="/" onClick={() => scrollUp()}>
           <img
-            src={i18n.language === "en" ? logo : gelogo}
+            src={i18n.language === "en" ? gelogo : logo}
             alt="avigozi logo"
           />
         </Link>
