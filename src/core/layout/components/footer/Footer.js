@@ -12,7 +12,7 @@ import {
 import logo from "../../../../assets/svg/logo.svg";
 import gelogo from "../../../../assets/svg/logogeo.svg";
 import ebrd from "../../../../assets/ebrd.png";
-import eugeorgia from "../../../../assets/svg/eu.svg";
+import eugeorgia from "../../../../assets/europe.png";
 import og from "../../../../assets/svg/og.svg";
 import USAID from "../../../../assets/usaid.png";
 import enterge from "../../../../assets/enterge.png";
