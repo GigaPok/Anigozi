@@ -21,6 +21,7 @@ import mapIcon from "../../../../assets/svg/map.svg";
 import mailIcon from "../../../../assets/svg/mail.svg";
 import fbIcon from "../../../../assets/svg/fbIcon.svg";
 import linkIcon from "../../../../assets/svg/linkedin.svg";
+import youtube from "../../../../assets/svg/youtube.svg";
 import arrow from "../../../../assets/svg/arrow.svg";
 import { useTranslation } from "react-i18next";
 
@@ -196,6 +197,15 @@ export const Footer = () => {
         </div>
         <div className="social">
           <ul>
+            <li>
+              <a
+                href="https://www.youtube.com/@Anigoziwalnuts"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src={youtube} alt="youtube icon" />
+              </a>
+            </li>
             <li>
               <a
                 href="https://www.facebook.com/anigozi22"
