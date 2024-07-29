@@ -17,6 +17,8 @@ import videos12 from "../../assets/videos12.jpg";
 import videos13 from "../../assets/videos13.jpg";
 import videos14 from "../../assets/videos14.jpg";
 import videos15 from "../../assets/videos15.jpg";
+import videos16 from "../../assets/videos16.jpg";
+import videos17 from "../../assets/videos17.jpg";
 import { Video } from "../../shared";
 import { useTranslation } from "react-i18next";
 
@@ -30,6 +32,16 @@ export const Videos = () => {
   const { t } = useTranslation();
 
   const videos = [
+    {
+      title: t("Videos.VideoTittle.Video17"),
+      url: "https://www.youtube.com/embed/GcGXwJ8Ms34?si=HLZJfjaXJoAiZ2Ty",
+      photo: videos17,
+    },
+    {
+      title: t("Videos.VideoTittle.Video16"),
+      url: "https://www.youtube.com/embed/CV5PZH9Hf3Q?si=853zZN5jAG8Unb1q",
+      photo: videos16,
+    },
     {
       title: t("Videos.VideoTittle.Video15"),
       url: "https://www.youtube.com/embed/XBjBK0zjCOU",
