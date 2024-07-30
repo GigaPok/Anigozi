@@ -79,34 +79,9 @@ export const Videos = () => {
       photo: videos9,
     },
     {
-      title: t("Videos.VideoTittle.Video1"),
-      url: "https://www.youtube.com/embed/FXT6-CGSi48?si=fzMTilaqUv6SrPyK",
-      photo: videos1,
-    },
-    {
-      title: t("Videos.VideoTittle.Video2"),
-      url: "https://www.youtube.com/embed/XfSa7jSHXJs?si=OKdUDtVBG3ebovxg",
-      photo: videos2,
-    },
-    {
-      title: t("Videos.VideoTittle.Video3"),
-      url: "https://www.youtube.com/embed/JH80LO7kLOU?si=P73U2LzoLmZ6p3iR",
-      photo: videos3,
-    },
-    {
-      title: t("Videos.VideoTittle.Video4"),
-      url: "https://www.youtube.com/embed/aKnLYYgDcmU?si=g8V6N89GpTU4PJV7",
-      photo: videos4,
-    },
-    {
-      title: t("Videos.VideoTittle.Video5"),
-      url: "https://www.youtube.com/embed/6TxoK9SDxsA?si=xrYFyxQtHl_6ffo0",
-      photo: videos5,
-    },
-    {
-      title: t("Videos.VideoTittle.Video6"),
-      url: "https://www.youtube.com/embed/XlpSUVCmuio?si=_Xj4V3WRtQpvx32G",
-      photo: videos6,
+      title: t("Videos.VideoTittle.Video8"),
+      url: "https://www.youtube.com/embed/-waNFyrGi8s?si=RrwkNgKshseNI7na",
+      photo: videos8,
     },
     {
       title: t("Videos.VideoTittle.Video7"),
@@ -114,9 +89,34 @@ export const Videos = () => {
       photo: videos7,
     },
     {
-      title: t("Videos.VideoTittle.Video8"),
-      url: "https://www.youtube.com/embed/-waNFyrGi8s?si=RrwkNgKshseNI7na",
-      photo: videos8,
+      title: t("Videos.VideoTittle.Video6"),
+      url: "https://www.youtube.com/embed/XlpSUVCmuio?si=_Xj4V3WRtQpvx32G",
+      photo: videos6,
+    },
+    {
+      title: t("Videos.VideoTittle.Video5"),
+      url: "https://www.youtube.com/embed/6TxoK9SDxsA?si=xrYFyxQtHl_6ffo0",
+      photo: videos5,
+    },
+    {
+      title: t("Videos.VideoTittle.Video4"),
+      url: "https://www.youtube.com/embed/aKnLYYgDcmU?si=g8V6N89GpTU4PJV7",
+      photo: videos4,
+    },
+    {
+      title: t("Videos.VideoTittle.Video3"),
+      url: "https://www.youtube.com/embed/JH80LO7kLOU?si=P73U2LzoLmZ6p3iR",
+      photo: videos3,
+    },
+    {
+      title: t("Videos.VideoTittle.Video2"),
+      url: "https://www.youtube.com/embed/XfSa7jSHXJs?si=OKdUDtVBG3ebovxg",
+      photo: videos2,
+    },
+    {
+      title: t("Videos.VideoTittle.Video1"),
+      url: "https://www.youtube.com/embed/FXT6-CGSi48?si=fzMTilaqUv6SrPyK",
+      photo: videos1,
     },
   ];
 
